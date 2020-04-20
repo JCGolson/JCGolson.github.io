@@ -1,0 +1,51 @@
+body {
+    line-height: 1.5;
+    max-width: 960px;
+    font-size: 1rem;
+    margin: 10px auto;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+header, footer {
+    background-color: #686ccc;
+    border-radius: 10px;
+    text-align: center;
+    color: #ffecdb;
+    padding: .25em;
+}
+
+
+header img {
+    width: 150px;
+    margin: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: .05em;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+footer a {
+    text-decoration: underline;
+    color: #ffecdb;
+    font-size: .75rem;
+}
+
+#updated {
+    color: #9cd4ff;
+}
