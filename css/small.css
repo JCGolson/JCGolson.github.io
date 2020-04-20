@@ -8,10 +8,10 @@ body {
 }
 
 header, footer {
-    background-color: #7970b3;
+    background-color: #4489b3;
     border-radius: 10px;
     text-align: center;
-    color: #ffe5d4;
+    color: #c7eefc;
     padding: .25em;
 }
 
@@ -42,10 +42,10 @@ h2 {
 
 footer a {
     text-decoration: underline;
-    color: #ffe5d4;
+    color: #c7eefc;
     font-size: .75rem;
 }
 
 #updated {
-    color: #a7ffa1;
+    color: #ff9496;
 }
