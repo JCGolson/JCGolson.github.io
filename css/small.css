@@ -11,7 +11,7 @@ header, footer {
     background-color: #4489b3;
     border-radius: 10px;
     text-align: center;
-    color: #c7eefc;
+    color: #fff;
     padding: .25em;
 }
 
@@ -42,10 +42,10 @@ h2 {
 
 footer a {
     text-decoration: underline;
-    color: #c7eefc;
+    color: #fff;
     font-size: .75rem;
 }
 
 #updated {
-    color: #ff9496;
+    color: #fff661;
 }
