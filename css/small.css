@@ -48,11 +48,15 @@ ul li a:hover {
     color:#686CCC;
 }
 
+footer {
+    color: #fff;
+    font-size: .5rem;
+    font-weight: 600;
+}
+
 footer a {
     text-decoration: underline;
     color: #fff;
-    font-size: .75rem;
-    font-weight: bold;
 }
 
 footer a:hover {
