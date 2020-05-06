@@ -1,0 +1,119 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 1100px;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Carter One', cursive;
+}
+
+header {
+    background-color: #004F2A;
+    color: #D6FFA5;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5px;
+    justify-items: center;
+}
+
+.logo {
+    max-width: 150px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.6em;
+}
+
+
+
+/* nav formatting here */
+nav {
+background-color: #0F8EB3;
+text-align: center;
+box-shadow: 0 2px 15px gray;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul a {
+    display: block;
+    color: #DFFFFF;
+    text-align: center;
+    padding: .75rem;
+    text-decoration: none;
+    font-size: .95rem;
+    font-weight: bold;
+}
+
+.active {
+    background-color: #DFFFFF;
+    color: #0F8EB3;
+}
+
+nav a:hover {
+    background: #D6FFA5;
+    color: black;
+}
+
+  
+  
+
+
+
+
+
+
+
+
+/*  main section formatting here */
+
+main {
+    background-color: #edfae9;
+    padding: 0 20px;
+}
+
+main header {
+    background-color: transparent;
+    color: #004F2A;
+    margin: 0 5px;
+    border-bottom: double #004F2A 6px;
+}
+
+h2, h3, h4
+{
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+main img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+
+
+/* footer formatting here */
+footer { 
+    background-color: #004F2A;
+    color: #edfae9;
+    text-align: center;
+    padding: 10px;
+}
