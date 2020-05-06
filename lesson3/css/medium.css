@@ -1,24 +1,28 @@
 @media only screen and (min-width: 560px) {
 
     body {
-        margin: 0 auto;
+        margin: 10px;
     }
 
     header {
         display: grid;
         grid-template-columns: 1fr 3fr;
         align-items: center;
+        margin-bottom: 10px;
+        border-radius: 10px 10px 0 0;
     }
 
     h1 {
         font-size: 2em;
     }
 
+    nav {margin-bottom: 10px;}
     nav ul { display: flex; }
     nav ul li { flex: 1 1 100%; }
 
     main {
         font-size: 1rem;
+        margin-bottom: 10px;
     }
  
     main header {
@@ -32,6 +36,10 @@
 
     main article {
         padding: 0 25px;
+    }
+
+    footer {
+        border-radius: 0 0 10px 10px;
     }
 
 }
