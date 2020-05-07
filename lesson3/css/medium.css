@@ -1,4 +1,4 @@
-@media only screen and (min-width: 560px) {
+@media only screen and (min-width: 32.5em) {
 
     body {
         margin: 10px;
@@ -12,9 +12,12 @@
         border-radius: 10px 10px 0 0;
     }
 
-    h1 {
-        font-size: 2em;
-    }
+    h1 {font-size: 2.em;}
+    h2 {font-size: 1.75em;}
+    h3 {font-size: 1.5em; margin: 12px 0;}
+    h4 {font-size: 1.2em;}
+
+
 
     nav {margin-bottom: 10px;}
     nav ul { display: flex; }
