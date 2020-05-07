@@ -2,16 +2,15 @@ body {
     line-height: 1.5;
     max-width: 960px;
     font-size: 1rem;
-    margin: 10px auto;
     padding: 10px;
     font-family: 'Roboto', sans-serif;
 }
 
 header, footer {
     background-color: #285980;
-    text-align: center;
     color: #fff;
-    padding: .25em;
+    padding: 4px;
+    text-align: center;
 }
 
 
@@ -31,9 +30,8 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 2rem;
-/*    letter-spacing: .05em;
-    margin: 10px;*/
-    float: left;
+    letter-spacing: .05em;
+    margin: 10px;
 }
 
 h2 {
