@@ -31,8 +31,9 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 2rem;
-    letter-spacing: .05em;
-    margin: 10px;
+/*    letter-spacing: .05em;
+    margin: 10px;*/
+    float: left;
 }
 
 h2 {
