@@ -29,9 +29,9 @@ header {
 h1 {
     font-size: 1em;
 }
-h2 {font-size: 1em;  margin: 12px 0;}
-h3 {font-size: 1.1em;  margin: 12px 0;}
-h4 {font-size: 1em;  margin: 15px 0;}
+h2 {font-size: 1.1em;  margin: 12px 0;}
+h3 {font-size: 1em;  margin: 12px 0;}
+h4 {font-size: .95em;  margin: 15px 0;}
 
 /* nav formatting here */
 nav {
@@ -59,8 +59,7 @@ nav ul a {
 }
 
 .active {
-    background-color: #DFFFFF;
-    color: #0F8EB3;
+    color: #D6FFA5;
 }
 
 nav a:hover {
@@ -82,7 +81,7 @@ nav a:hover {
 
 main {
     background-color: #edfae9;
-    padding: 0 20px;
+    padding: 0 20px 30px 20px;
 }
 
 main header {
@@ -98,10 +97,6 @@ h2, h3, h4
     text-align: center;
 }
 
-h2 {font-size: 1.2em;}
-h3 {font-size: 1.em;}
-h4 {font-size: .95em;}
-
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -113,6 +108,7 @@ main img {
     max-width: 150px;
 }
 
+li {line-height: 1.25em; margin-bottom: 10px;}
 
 
 /* footer formatting here */

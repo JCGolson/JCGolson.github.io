@@ -1,0 +1,203 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+.grid>span {
+    display: block;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* code to make the last item in each row span columns */
+.grid>span:nth-child(5) {
+    grid-column: span 2;
+}
+
+.grid>span:nth-child(10) {
+    grid-column: span 2;
+}
+
+.grid>span:nth-child(15) {
+    grid-column: span 2;
+}
+
+.grid>span:nth-child(20) {
+    grid-column: span 2;
+}
+
+.grid>span:nth-child(25) {
+    grid-column: span 2;
+}
+
+.grid>span:nth-child(30) {
+    grid-column: span 2;
+}
+
+
+/************************ h1 ***********************/
+.row1 {
+    color: black;
+}
+
+.row1-sample {
+    font-size: 1em;
+    background-color: #004F2A;
+    color: #D6FFA5;
+    font-family: 'Carter One', sans-serif;
+}
+
+/*********************** nav ************************/
+.row2 {
+    color: black;
+}
+
+.row2-sample {
+    background-color: #0F8EB3;
+    color: #DFFFFF;
+    font-size: .95rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+/********************** h2 *************************/
+
+.row3 {
+    color: black;
+}
+
+.row3-sample {
+    font-size: 1.1rem;
+    font-family: 'Carter One', sans-serif;
+    color: #004F2A;
+}
+
+/*********************** h3 ************************/
+.row4 {
+    color: black;
+}
+
+.row4-sample {
+    font-size: 1rem;
+    font-family: 'Carter One', sans-serif;
+    color: #004F2A;
+}
+
+/********************** h4 *******************************/
+.row5 {
+    color: black;
+}
+
+.row5-sample {
+    color: #004F2A;
+    font-family: 'Carter One', sans-serif;
+    font-size: .95rem;
+}
+
+/********************** paragraph*************************/
+.row6 {
+    color: #000;
+}
+
+.row6-sample {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/********************* footer **************************/
+.row7 {
+    color: #000;
+}
+
+.row7-sample {
+    font-size: .75rem;
+    font-family: 'Roboto', sans-serif;
+    color: #edfae9;
+    background-color: #004F2A;
+}
+
+/********************* medium screen *************************/
+@media only screen and (min-width: 30em) {
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /******************* h1 sample ********************/
+    .row1-sample {
+        font-size: 2rem;
+    }
+
+    /****************** h2 sample *********************/
+    .row3-sample {
+        font-size: 1.755rem;
+    }
+
+    /***************** h3 sample **********************/
+    .row4-sample {
+        font-size: 1.5rem;
+    }
+
+    /***************** h4 sample **********************/
+    .row5-sample {
+        font-size: 1.2rem;
+    }
+
+    /***************** paragraph sample ***************/
+    row6-sample {
+        font-size: 1rem;
+    }
+}
+
+/**********************************************/
+/* large media query */
+@media only screen and (min-width: 60em) {
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    }
+
+    .grid>span:nth-child(5) {
+        grid-column: span 1;
+    }
+
+    .grid>span:nth-child(10) {
+        grid-column: span 1;
+    }
+
+    .grid>span:nth-child(15) {
+        grid-column: span 1;
+    }
+
+    .grid>span:nth-child(20) {
+        grid-column: span 1;
+    }
+
+    .grid>span:nth-child(25) {
+        grid-column: span 1;
+    }
+
+    .grid>span:nth-child(30) {
+        grid-column: span 1;
+    }
+
+    /******************* h1 sample ********************/
+    .row1-sample {
+        font-size: 3rem;
+    }
+
+    /****************** h2 sample *********************/
+    .row3-sample {
+        font-size: 2.5rem;
+    }
+
+    /***************** h3 sample **********************/
+  
+
+}
