@@ -65,6 +65,7 @@ nav ul a {
 .active {
     color: #E5E059;
     font-size: 1.1em;
+    font-weight: 600;
 }
 
 nav a:hover {
