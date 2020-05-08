@@ -47,7 +47,7 @@
 .row1-sample {
     font-size: 1em;
     background-color: #004F2A;
-    color: #D6FFA5;
+    color: #E5E059;
     font-family: 'Carter One', sans-serif;
 }
 
@@ -58,7 +58,7 @@
 
 .row2-sample {
     background-color: #0F8EB3;
-    color: #DFFFFF;
+    color: #E5E059;
     font-size: .95rem;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -78,7 +78,7 @@
 
 /*********************** h3 ************************/
 .row4 {
-    color: black;
+    color: #000;
 }
 
 .row4-sample {
@@ -100,7 +100,7 @@
 
 /********************** paragraph*************************/
 .row6 {
-    color: #000;
+    color: black;
 }
 
 .row6-sample {
@@ -115,8 +115,9 @@
 
 .row7-sample {
     font-size: .75rem;
+    font-weight: bold;
     font-family: 'Roboto', sans-serif;
-    color: #edfae9;
+    color: #E5E059;
     background-color: #004F2A;
 }
 

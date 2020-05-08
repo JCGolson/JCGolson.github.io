@@ -1,10 +1,15 @@
 @media only screen and (min-width: 65em) {
+    
+    body {
+        margin: 10px auto;
+    }
 
-body {
-    margin: 10px auto;
-}
+    h1 {
+        font-size: 3em;
+    }
 
-h1 {font-size: 3em;}
-h2 {font-size: 2.5em;}
-
+    h2 {
+        font-size: 2.5em;
+    }
+    
 }

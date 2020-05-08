@@ -13,33 +13,37 @@ h5 {
     font-family: 'Carter One', cursive;
 }
 
+h2,
+h3,
+h4, 
+h5 { color: #004F2A; text-align: center;}
+
 header {
     background-color: #004F2A;
-    color: #D6FFA5;
+    color: #E5E059;
     padding: 5px;
-    justify-items: center;
-}
+ }
 
 .logo {
     max-width: 65px;
     float: left;
-    margin-right: 10px;
+    margin: 5px;
 }
 
-h1 {
-    font-size: 1em;
-}
-h2 {font-size: 1.1em;  margin: 12px 0;}
-h3 {font-size: 1em;  margin: 12px 0;}
-h4 {font-size: .95em;  margin: 15px 0;}
+h1 {font-size: 1em; margin: 20px 0 10px 0;}
+h2 {font-size: 1.1em; margin: 5px 0;}
+h3 {font-size: 1em; margin: 5px 0 15px 0;}
+h4 {font-size: .95em; margin: 15px 0 10px 0;}
+
+
 
 /* nav formatting here */
 nav {
 background-color: #0F8EB3;
 text-align: center;
 box-shadow: 0 2px 15px gray;
+padding: 0;
 }
-
 
 nav ul {
     list-style: none;
@@ -50,7 +54,7 @@ nav ul {
 
 nav ul a {
     display: block;
-    color: #DFFFFF;
+    color: #000;
     text-align: center;
     padding: .75rem;
     text-decoration: none;
@@ -59,42 +63,26 @@ nav ul a {
 }
 
 .active {
-    color: #D6FFA5;
+    color: #E5E059;
 }
 
 nav a:hover {
-    background: #D6FFA5;
-    color: black;
+    background: #E5E059;
+    color: #E63946;
 }
 
   
-  
-
-
-
-
-
-
-
-
+ 
 /*  main section formatting here */
 
 main {
-    background-color: #edfae9;
-    padding: 0 20px 30px 20px;
+    background-color: #EEEBD0;
+    padding: 10px 15px 30px 15px;
 }
 
-main header {
+section {
     display: block;
-    background-color: transparent;
-    color: #004F2A;
-    margin: 0 5px;
     border-bottom: double #004F2A 6px;
-}
-
-h2, h3, h4
-{
-    text-align: center;
 }
 
 .container {
@@ -108,19 +96,22 @@ main img {
     max-width: 150px;
 }
 
-li {line-height: 1.25em; margin-bottom: 10px;}
+li {line-height: 1.25em; }
 
 
 /* footer formatting here */
 footer { 
     background-color: #004F2A;
-    color: #edfae9;
+    color: #E5E059;
     text-align: center;
     padding: 10px;
     font-size: .75em;
+    font-weight: bold;
+    line-height: 1.5em;
 }
 
-
+footer a {color: #E5E059; text-decoration: underline;}
+footer a:hover {color: #E63946;}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

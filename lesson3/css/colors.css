@@ -10,45 +10,53 @@ article {
     max-width: 100%;
     border-radius: 15px;
 }
+/*header colors */
 
+.block1 h4 {color: #E5E059;}
 .block1 {
-    color: #D6FFA5;
+    color: #E5E059;
     background-color: #004F2A;
 }
 
+/* navigation colors */
 .block2 {
-    color: #DFFFFF;
+    color: #000;
     background-color: #0F8EB3;
 }
 
+/* naviation active colors */
 .block3 {
     background-color: #0F8EB3;
-    color: #D6FFA5;
+    color: #E5E059;
 }
 
+/* navigation hover colors */
 .block4 {
-    background-color: #D6FFA5;
-    color: #000;
+    background-color: #E5E059;
+    color: #E63946;
 }
 
+/* headings colors */
 .block5 {
     color: #004F2A;
-    background-color: #edfae9;
+    background-color: #EEEBD0;
     border: solid 1px #004F2A;
 }
 
+/* body colors */
 .block6 {
     color: #000000;
     border: solid 1px #004F2A;
-    background-color: #edfae9;
+    background-color: #EEEBD0;
 }
 
 .block6 h4 {
     color: #000;
 }
 
+.block7 h4 {color: #E5E059;}
 .block7 {
-    color: #edfae9;
+    color: #E5E059;
     background-color: #004F2A;
 }
 
