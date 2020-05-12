@@ -58,18 +58,20 @@ nav ul a {
     text-align: center;
     padding: .85rem;
     text-decoration: none;
-    font-size: .95rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .active {
-    color: #ffffff;
-    font-size: 1.2em;
+    color: #E5E059;
+    background-color: #004F2A;
+    font-weight: bold;
 }
 
 nav a:hover {
-    background: #E5E059;
-    color: #E63946;
+    background-color: #E5E059;
+    color: #004F2A;
+    font-weight: bold;
 }
 
   
