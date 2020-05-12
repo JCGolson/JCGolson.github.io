@@ -8,8 +8,8 @@
         width: 100px;
     }
 
-    .headings h1 {font-size: 2rem;}
-    .headings h2 {font-size: 1.2rem;}
+    .headings h1 {font-size: 2rem; letter-spacing: .14rem;}
+    .headings h2 {font-size: 1.2rem; letter-spacing: .08rem;}
 
     .navigation {
 		display: flex;
