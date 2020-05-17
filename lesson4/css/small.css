@@ -15,7 +15,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Carter One', cursive;
+    font-family: 'Abril Fatface', cursive;
     color: #004F2A;
 }
 
@@ -24,7 +24,7 @@ h5 {
 div#headerWrapper {background-color: #004F2A;
 }
 header {
-     display: flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     max-width: 100%;
@@ -50,8 +50,8 @@ header img {
 }
 
 .headings h2 {
-    font-size: .9rem;
-    letter-spacing: .1rem;
+    font-size: 1rem;
+    letter-spacing: .08rem;
 }
 
 main h1 {
