@@ -28,5 +28,8 @@
 		display: none;
 	}
 
+    
+    .forecast {display: block;}
+
 
 } /*end medium */
