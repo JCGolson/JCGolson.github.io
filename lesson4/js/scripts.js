@@ -1,9 +1,12 @@
 const hambutton = document.querySelector('.ham');
 const mainnav = document.querySelector('.navigation')
 
+function myFunction(x) {
+	x.classList.toggle("change");
+  }
+
 hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
-
-
+  
 //Toggles the hamburger menu on and off
 /*function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("hide");
