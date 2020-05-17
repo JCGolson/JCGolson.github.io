@@ -46,12 +46,23 @@ header img {
 
 .headings h1 {
     font-size: 1.7rem;
+    letter-spacing: .1rem;
 }
 
 .headings h2 {
-    font-size: .95rem;
+    font-size: .9rem;
+    letter-spacing: .1rem;
 }
 
+main h1 {
+    margin-top: 0;
+}
+
+section h2 {
+    color: #004F2A; 
+    font-size: 1.2rem;
+    padding-top: 6px;
+ }
 
 /* -----nav formatting here----- */
 div#navWrapper {background-color: #0F8EB3;
