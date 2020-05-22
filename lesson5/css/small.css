@@ -190,7 +190,7 @@ main section {
     position: absolute;
 	top: 25px;
 	left: 25px;
-	background: radial-gradient(#fff, #E5E059 );
+	background: radial-gradient(#fff, #c4ead8 );
 	border: 1px solid #004F2A;
 	padding: 1rem;
 	box-shadow: 0 0 30px #111;
@@ -233,22 +233,45 @@ ul.col2 {
 
 
 /* -------------city formatting --------------*/
-section.city {
-    display: grid;  
-    grid-template-columns: 1fr;
+.city-article {
+    display: flex;  
+    flex-direction: column-reverse;
     
 }
 
-.city-article {
-    display: flexbox;
-    justify-items: flex-start;
-}
     
 .city-img img {
     max-width: 100%;
-    padding-top: 15px;
-    justify-items: flex-end;
 }
+
+
+/* ------------contact formatting -----------*/
+
+.contact {
+    padding: 10px 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info p {
+    margin:0;
+    padding-top: 2px;
+    display: flex;
+    flex-direction: row;
+}
+
+.social img {
+    width: 30px;
+    margin:  10px 0 0 0;
+}
+
+.map-container{
+    display: none;
+}
+
 
  /* -----footer formatting here----- */
 div#footerWrapper {background-color: #004F2A;}

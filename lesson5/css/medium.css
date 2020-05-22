@@ -73,11 +73,33 @@
         margin: 2px auto;
     }
 
+    
+/* -------------city formatting --------------*/
+    .city-article {
+        display: block;  
+    }
+
     .city-img {
         float: right;
-        padding-top: 15px;
         padding-left: 20px;
         max-width: 320px;
     }
+
+/* ------------contact formatting -----------*/
+
+.contact {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.map-container{
+    display: block;
+}
+
+.contact-info {
+    display:flex;
+    flex-direction: column;
+}
 
 } /*end medium */
