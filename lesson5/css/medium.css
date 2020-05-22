@@ -28,8 +28,56 @@
 		display: none;
 	}
 
+    .hero {
+        height: 400px;
+    }
+    .hero-ph img {
+        height:396px;
+    }
     
     .forecast {display: block;}
 
+    .five-day {
+        display: flex;
+        flex-direction: row;
+        /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        */padding: 0;
+        margin: 10px auto;
+    }
+    
+    .five-day div {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100px;
+        text-align: center;
+        background-color: #fff;
+        padding: 0;
+        margin: 5px;
+        border: 1px #004F2A solid;
+        border-radius: 10px;
+    }
+
+    .five-day div h5 {
+        background: radial-gradient(#fff, #E5E059 );
+        color:  #004F2A;
+        padding: 4px;
+        margin: 1px;
+        border-bottom: #004F2A 1px solid;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .five-day div img {
+        margin: 5px auto;
+    }
+    .five-day div span {
+        margin: 2px auto;
+    }
+
+    .city-img {
+        float: right;
+        padding-top: 15px;
+        padding-left: 20px;
+        max-width: 320px;
+    }
 
 } /*end medium */

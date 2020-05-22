@@ -67,13 +67,13 @@ section h2 {
 
 /* -----nav formatting here----- */
     div#navWrapper {
-        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0f8eb3+0,45b0cf+100 */
    background: rgb(15,142,179); /* Old browsers */
    background: -moz-linear-gradient(top,  rgba(15,142,179,1) 0%, rgba(69,176,207,1) 100%); /* FF3.6-15 */
    background: -webkit-linear-gradient(top,  rgba(15,142,179,1) 0%,rgba(69,176,207,1) 100%); /* Chrome10-25,Safari5.1-6 */
    background: linear-gradient(to bottom,  rgba(15,142,179,1) 0%,rgba(69,176,207,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f8eb3', endColorstr='#45b0cf',GradientType=0 ); /* IE6-9 */
-}
+ }
+
 nav {
     margin: 0 auto;
     max-width: 100%;
@@ -159,19 +159,96 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e059', end
 /* -----main formatting here----- */
 
  main {
+     max-width: 100%;
      padding: 5px 3%;
+
  }
 
 main section {
     background-color: #EEEBD0;
     padding: 2px 2%;
     margin: 10px 0;
-    border: 1px solid rgba(0,0,0,0.3);
+    border: 1px solid #004F2A;
 }
 
+.hero {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border: 2px solid #004F2A;
+}
+
+.hero-ph img {
+    margin: 0 auto;
+    width: 100%;
+    height: 296px;
+}
+
+.stats {
+    position: absolute;
+	top: 25px;
+	left: 25px;
+	background: radial-gradient(#fff, #E5E059 );
+	border: 1px solid #004F2A;
+	padding: 1rem;
+	box-shadow: 0 0 30px #111;
+    opacity: .9;
+}
+
+.stats h2 {
+    display: block;
+    color: #004F2A;
+    border-bottom: 3px #004F2A solid;
+    text-align: left;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+ul.col1 {
+    list-style-type: none;
+    text-align:right;
+    padding-left: 0;
+    color: #000;
+    line-height: 1.3rem;
+}
+
+ul.col2 {
+    list-style-type: none;
+    text-align:left;
+    padding-left: 15px;
+    color: #0F8EB3;
+    line-height: 1.3rem;
+    font-weight: bold;
+}
+
+
+/* ------------forcast formatting -------- */
 .forecast {display: none;}
 
 
+
+/* -------------city formatting --------------*/
+section.city {
+    display: grid;  
+    grid-template-columns: 1fr;
+    
+}
+
+.city-article {
+    display: flexbox;
+    justify-items: flex-start;
+}
+    
+.city-img img {
+    max-width: 100%;
+    padding-top: 15px;
+    justify-items: flex-end;
+}
 
  /* -----footer formatting here----- */
 div#footerWrapper {background-color: #004F2A;}

@@ -4,9 +4,12 @@
  
    
     header, nav, main, footer {
-        max-width: 1024px;
+        max-width: 960px;
         margin: 0 auto;
     }
 
+    .article-img {
+         max-width: 460px;
+    }
  
 } /*end large */
