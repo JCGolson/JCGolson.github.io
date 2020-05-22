@@ -5,15 +5,15 @@
     letter-spacing: .15rem;
 
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cbf9e2+1,fafffc+50,fafffc+51,cbf9e2+100 */
-    background: #cbf9e2;
+    background: #e7e497;
     /* Old browsers */
-    background: -moz-linear-gradient(top, #E5E059 1%, #fafffc 50%, #fafffc 51%, #E5E059 100%);
+    background: -moz-linear-gradient(top, #e7e497 1%, #fafffc 50%, #fafffc 51%, #e7e497 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #E5E059 1%, #fafffc 50%, #fafffc 51%, #E5E059 100%);
+    background: -webkit-linear-gradient(top, #e7e497 1%, #fafffc 50%, #fafffc 51%, #e7e497 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #E5E059 1%, #fafffc 50%, #fafffc 51%, #E5E059 100%);
+    background: linear-gradient(to bottom, #e7e497 1%, #fafffc 50%, #fafffc 51%, #e7e497 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cbf9e2', endColorstr='#cbf9e2', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce7e497', endColorstr='#e7e497', GradientType=0);
     /* IE6-9 */
 
     box-shadow: 0 0 10px #111;
@@ -73,7 +73,4 @@
         /* Browser bug fix */
         transform: translateX(-100%);
     }
-
-
-    
 }
