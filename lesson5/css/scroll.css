@@ -1,7 +1,6 @@
 
 .marquee {
  height: 40px;	
- overflow: hidden;
  position: relative;
  letter-spacing: .15rem;
 
