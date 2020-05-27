@@ -64,7 +64,7 @@ main h1 {
 picture.photoA {
     display: block;
     width: 96%;
-    margin: 0 2%;
+    margin: 0;
 }
 
 main picture.photoA img {width: 100%;}
