@@ -55,24 +55,7 @@ header img {
     letter-spacing: .12rem;
 }
 
-main h1 {
-    margin-top: 0;
-}
 
-
-picture.photoA {
-    display: block;
-    width: 96%;
-    margin: 0;
-}
-
-main picture.photoA img {width: 100%;}
-
-section h2 {
-    color: #004F2A; 
-    font-size: 1.2rem;
-    padding-top: 6px;
- }
 
 /* -----nav formatting here----- */
     div#navWrapper {
@@ -172,6 +155,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e059', end
      padding: 5px 3%;
 
  }
+ 
+main h1 {
+    margin-top: 0;
+}
+
+section h2 {
+    color: #004F2A; 
+    font-size: 1.2rem;
+    padding-top: 6px;
+ }
 
 main section {
     background-color: #EEEBD0;
@@ -181,23 +174,23 @@ main section {
 }
 
 div.hero-ph {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     position: relative;
     width: 100%;
     border: 2px solid #004F2A;
 }
 
-picture.photoA {
+div.hero-ph picture.photoA {
     display: block;
     width: 100%;
     margin: 0;
     padding: 0;
 }
 
-main picture.photoA img {width: 100%;}
+div.hero-ph picture.photoA img {width: 100%;}
 
-.stats {
+div.hero-ph div.stats {
     position: absolute;
 	top: 25px;
 	left: 25px;
