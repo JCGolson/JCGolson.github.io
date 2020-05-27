@@ -46,14 +46,13 @@ header img {
 }
 
 .headings h1 {
-    font-size: 1.7rem;
-    letter-spacing: .1rem;
+    font-size: 1.6rem;
 }
 
 .headings h2 {
-    font-size: 1rem;
-    letter-spacing: .5rem;
+    font-size: .8rem;
     font-family: Roboto;
+    letter-spacing: .12rem;
 }
 
 main h1 {
@@ -63,7 +62,7 @@ main h1 {
 
 picture.photoA {
     display: block;
-    width: 100commit%;
+    width: 96%;
     margin: 0;
 }
 
@@ -178,23 +177,26 @@ main section {
     background-color: #EEEBD0;
     padding: 2px 2%;
     margin: 10px 0;
-    border: 1px solid #004F2A;
-}
-
-.hero {
-    margin: 0 auto;
-    padding: 0;
-    position: relative;
-    width: 100%;
-    height: 300px;
     border: 2px solid #004F2A;
 }
 
-.hero-ph img {
-    margin: 0 auto;
+.hero-ph {
+    margin: 0;
+    padding: 0;
+    position: relative;
     width: 100%;
-    height: 296px;
+    border: 2px solid #004F2A;
 }
+
+picture.photoA {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main picture.photoA img {width: 100%;}
 
 .stats {
     position: absolute;

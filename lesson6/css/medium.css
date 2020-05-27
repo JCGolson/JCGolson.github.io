@@ -27,13 +27,13 @@
     .navigation li:first-child {
 		display: none;
 	}
-
+/*
     .hero {
         height: 400px;
     }
     .hero-ph img {
         height:396px;
-    }
+    }*/
     
     .forecast {display: block;}
 
