@@ -46,16 +46,24 @@ header img {
 }
 
 .headings h1 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+    letter-spacing: .1rem;
 }
 
 .headings h2 {
-    font-size: .8rem;
-    font-family: Roboto;
-    letter-spacing: .12rem;
+    font-size: 1rem;
+    letter-spacing: .08rem;
 }
 
+main h1 {
+    margin-top: 0;
+}
 
+section h2 {
+    color: #004F2A; 
+    font-size: 1.2rem;
+    padding-top: 6px;
+ }
 
 /* -----nav formatting here----- */
     div#navWrapper {
@@ -155,42 +163,41 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e059', end
      padding: 5px 3%;
 
  }
- 
-main h1 {
-    margin-top: 0;
-}
-
-section h2 {
-    color: #004F2A; 
-    font-size: 1.2rem;
-    padding-top: 6px;
- }
 
 main section {
     background-color: #EEEBD0;
     padding: 2px 2%;
     margin: 10px 0;
-    border: 2px solid #004F2A;
+    border: 1px solid #004F2A;
 }
 
-div.hero-ph {
+section.hero {
     margin: 0 auto;
     padding: 0;
     position: relative;
     width: 100%;
+    height: auto;
     border: 2px solid #004F2A;
 }
+/*
+section.hero-ph  {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+*/
 
-div.hero-ph picture.photoA {
+picture.photoA {
     display: block;
     width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
-div.hero-ph picture.photoA img {width: 100%;}
+picture.photoA img {width: 100%;}
 
-div.hero-ph div.stats {
+.stats {
     position: absolute;
 	top: 25px;
 	left: 25px;

@@ -8,6 +8,10 @@
         margin: 0 auto;
     }
 
+    section.hero {
+        max-width: 1100px;
+    }
+
     .city-img {
         max-width: 460px;
     }
