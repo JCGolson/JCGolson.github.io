@@ -189,7 +189,7 @@ picture.photoA {
     padding: 0;
 }
 
-picture.photoA img {width: 100%; height: 100%;}
+picture.photoA img {width: 100%; height: 100%; display:block;}
 
 .stats {
     position: absolute;
