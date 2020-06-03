@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston</title>
+    <meta name="description"
+        content="The initial layout for the Preston page for Juanita Golson's weather site project for WDD 230. ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/scroll.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="bannerad" class="marquee" hidden>
+        <h5>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</h5>
+    </div>
+
+    <div id="headerWrapper">
+        <header>
+            <img src="images/cloud-and-sun.png" alt="Cloud & Sun">
+            <div class="headings">
+                <h1>Gem State News</h1>
+                <h2>Where the weather counts</h2>
+            </div>
+        </header>
+    </div>
+    <div id="navWrapper">
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham">
+                        <div class="container" onclick="myFunction(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </a></li>
+                <li><a href="#">Home</a></li>
+                <li><a class="active" href="preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h1>Preston</h1>
+
+        <section class="hero">
+                <picture class="photoA">
+                    <source media="(max-width: 450px)" srcset="images/wdd230_image_franklin_small.jpg">
+                    <source media="(max-width: 800px)" srcset="images/wdd230_image_franklin_medium.jpg">
+                    <img src="images/wdd230_image_franklin_large.jpg" alt="image of Franklin">
+                </picture>
+  
+                <div class="stats">
+                    <h2>Weather Summary</h2>
+                    <div class="summary">
+                        <ul class="col1">
+                            <li>Currently:</li>
+                            <li>Temperature:</li>
+                            <li>Humidity:</li>
+                            <li>Precipitation:</li>
+                            <li>Wind Speed:</li>
+                            <li>Wind Chill:</li>
+                        </ul>
+                        <ul class="col2">
+                            <li>Sunny</li>
+                            <li><span id="temp">65</span>&deg; F</li>
+                            <li>69%</li>
+                            <li>0 inches</li>
+                            <li><span id="speed">15</span> mph</li>
+                            <li><span id="chill"> </span></li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+
+        <section class="forecast">
+            <h2>Five day Forecast</h2>
+            <div class="five-day">
+                <div>
+                    <h5>Monday</h5>
+                    <img src="images/cloudy.png" alt="cloudy">
+                    <span>60&deg;</span>
+                </div>
+                <div>
+                    <h5>Tuesday</h5>
+                    <img src="images/chance-storm.png" alt="storm">
+                    <span>50&deg;</span>
+                </div>
+                <div>
+                    <h5>Wednesday</h5>
+                    <img src="images/p-c-snow.png" alt="snow">
+                    <span>30&deg;</span>
+                </div>
+                <div>
+                    <h5>Thursday</h5>
+                    <img src="images/showers.png" alt="showers">
+                    <span>60&deg;</span>
+                </div>
+                <div>
+                    <h5>Friday</h5>
+                    <img src="images/hazy.png" alt="hazy">
+                    <span>75&deg;</span>
+                </div>
+            </div>
+        </section>
+        <section class="city">
+            <h2>About Preston</h2>
+
+            <div class="city-img"><img src="images/soccer-kids.jpg" alt="kids playing soccer"></div>
+            <div class="city-article">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+                    cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis
+                    ipsum.
+                    Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu
+                    eget
+                    nulla. </p>
+
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    Curabitur
+                    sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh.
+                    Aenean
+                    quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula
+                    vel
+                    nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce
+                    ac
+                    turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt
+                    sed,
+                    euismod in, nibh. </p>
+
+                <p>Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia
+                    nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor
+                    neque
+                    adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse
+                    potenti.
+                    Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices.
+                    Suspendisse in justo eu magna luctus suscipit. Sed lectus. </p>
+            </div>
+        </section>
+        <section class="contact-section">
+
+            <h2>Contact Us</h2>
+
+            <div class="contact">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23683.041049710246!2d-111.89564946246662!3d42.099328959520946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7ecfeb7b869%3A0x8abd165683b62e8d!2sPreston%20Ave%2C%20Preston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1590171457324!5m2!1sen!2sus"></iframe>
+                </div>
+                <div class="contact-info">
+
+                    <p><b>Gem State News</b></p>
+                    <p>&#128681;300 Preston Ave</p>
+                    <p>Preston, ID 83263</p>
+                    <p>&nbsp;</p>
+                    <p>☎ (555) 555-2378</p>
+                    <p>📧 gemstatenews@gsn.com</p>
+                    <p>&nbsp;</p>
+
+                    <div class="social">
+                        <img src="images/Facebook.png" alt="Facebook">
+                        <img src="images/Twitter.png" alt="Twitter">
+                        <img src="images/Linkedin.png" alt="Linkedin">
+                        <img src="images/Instagram.png" alt="Instagram">
+                        <img src="images/Pinterest.png" alt="Pinterest">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+    <div id="footerWrapper">
+        <footer>
+            &copy; Juanita Golson &nbsp; &#42; &nbsp; <span id="currentdate"></span>
+        </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/windchill.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+main {
+    margin: 10px auto;
+    width: 100%;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+picture {
+    display: block;
+    padding: 0 0 10px 0;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px #ccc solid;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.norm:hover {box-shadow: 0 0 50px #333;}
+
+.caption {
+    padding: 10px 0 0 5px;
+}
+
+
+@media only screen and (min-width: 35rem) {
+    .gallery-container {
+         grid-template-columns: 1fr 1fr;
+         grid-gap: 15px;
+    }
+
+}
+
+@media only screen and (min-width: 60rem) {
+    .gallery-container {
+         grid-template-columns: 1fr 1fr 1fr;
+     }
+
+}
