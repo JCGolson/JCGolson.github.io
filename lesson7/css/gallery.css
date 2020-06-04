@@ -11,11 +11,16 @@ main {
 
 picture {
     display: block;
-    padding: 0 0 10px 0;
+    padding: 0;
     margin-bottom: 20px;
     width: 100%;
     border: 1px #ccc solid;
 }
+
+picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
 
 img {
     display: block;
@@ -24,8 +29,8 @@ img {
 
 .norm:hover {box-shadow: 0 0 50px #333;}
 
-.caption {
-    padding: 10px 0 0 5px;
+p.caption {
+    padding-left: 5px;
 }
 
 
