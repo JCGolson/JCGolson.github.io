@@ -61,8 +61,8 @@ div.slider {
 
 input#rating {
     padding: 3px 0;
-    width: 100%;   
-    max-width: 20rem;
+    width: 90%;   
+    max-width: 18rem;
 }
 
 form label.top input:required {
