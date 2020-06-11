@@ -1,0 +1,109 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+    header {
+        padding: 5px;
+    }
+    header img {
+        width: 100px;
+    }
+
+    .headings h1 {font-size: 2rem; letter-spacing: .14rem;}
+    .headings h2 {font-size: 1.2rem; letter-spacing: .08rem;}
+
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+    .navigation a {
+        text-align: center;
+        border: none;
+        border-right: 1px solid rgba(250,250,250,0.2);
+    }
+
+    .navigation li:first-child {
+		display: none;
+	}
+
+    section.hero {
+        max-width: 900px;
+    }
+    
+    .forecast {display: block;}
+
+    .five-day {
+        display: flex;
+        flex-direction: row;
+        /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        */padding: 0;
+        margin: 10px auto;
+    }
+    
+    .five-day div {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100px;
+        text-align: center;
+        background-color: #fff;
+        padding: 0;
+        margin: 5px;
+        border: 1px #004F2A solid;
+        border-radius: 10px;
+    }
+
+    .five-day div h5 {
+        background: radial-gradient(#fff, #E5E059 );
+        color:  #004F2A;
+        padding: 4px;
+        margin: 1px;
+        border-bottom: #004F2A 1px solid;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .five-day div img {
+        margin: 5px auto;
+    }
+    .five-day div span {
+        margin: 2px auto;
+    }
+
+    
+/* -------------city formatting --------------*/
+    .city-article {
+        display: block;  
+    }
+
+    .city-img {
+        float: right;
+        padding-left: 20px;
+        max-width: 320px;
+    }
+
+/* ------------contact formatting -----------*/
+
+.contact {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.map-container{
+    display: block;
+}
+
+iframe {
+    width: 300px; 
+    border:0; 
+    /*allowfullscreen="" aria-hidden="false"
+    tabindex="0"*/
+}
+
+.contact-info {
+    display:flex;
+    flex-direction: column;
+}
+
+} /*end medium */
