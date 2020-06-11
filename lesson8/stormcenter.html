@@ -17,7 +17,7 @@
 </head>
 
 <body>
- 
+
     <div id="headerWrapper">
         <header>
             <img src="images/cloud-and-sun.png" alt="Cloud & Sun">
@@ -53,7 +53,8 @@
                 <legend>Reporter Information</legend>
                 <label class="top">Full Name<input type="text" name="fname" required pattern="[A-z\s]{5,}"></label>
                 <label class="top">Email<input type="email" name="email" placeholder="user@email.com"></label>
-                <label class="top">Phone Number<input type="tel" name="phone" placeholder="123-555-1234" required></label>
+                <label class="top">Phone Number<input type="tel" name="phone" placeholder="123-555-1234"
+                        required></label>
                 <label class="top">Zip Code<input type="number" name="zip" required></label>
             </fieldset>
             <fieldset>
@@ -68,38 +69,36 @@
                         <option value="Thunderstorm">
                         <option value="Tornado">
                     </datalist>
-                    </label>
-                    <div class="range">
-                    <label class="slidehead" for="rating">Storm Severity (1 to 10):
-                    </label>
-                    <div class="slider">
-                    <input type="range" id="rating" value="4"
-                            min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)"
-                            onchange="adjustRating(this.value)">
+                </label>
+
+                <label class="slidehead" for="rating">Storm Severity (1 to 10):
+                    <span class="slider">
+                        <input type="range" id="rating" value="4" min="1" max="10" step="1" list="tickmarks"
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                         <span id="ratingvalue">&nbsp;&nbsp;&nbsp;4</span>
-                    <datalist id="tickmarks">
-                        <option value="0">
-                        <option value="1">
-                        <option value="2">
-                        <option value="3">
-                        <option value="4">
-                        <option value="5">
-                        <option value="6">
-                        <option value="7">
-                        <option value="8">
-                        <option value="9">
-                        <option value="10">
-                      </datalist>
-                    </div>
-                </div>
-                    <label class="top">Storm Region
-                        <select name="region">
-                            <option value="">Select Region ...  &#9662;</option>
-                            <option value="fishHaven">Fish Haven</option>
-                            <option value="preston">Preston</option>
-                            <option value="sodaSpring">Soda Springs</option>
-                        </select>
-                    </label>
+                        <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="7">
+                            <option value="8">
+                            <option value="9">
+                            <option value="10">
+                        </datalist>
+                    </span>
+                </label>
+                <label class="top">Storm Region
+                    <select name="region">
+                        <option value="">Select Region ... &#9662;</option>
+                        <option value="fishHaven">Fish Haven</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaSpring">Soda Springs</option>
+                    </select>
+                </label>
             </fieldset>
             <fieldset>
                 <legend>Additional Information</legend>
