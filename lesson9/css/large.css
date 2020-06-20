@@ -1,13 +1,89 @@
 /* 64em is also 1028px when basefont is 16px */
-@media only screen and (min-width: 65rem) {
+@media only screen and (min-width: 62rem) {
    
     header, nav, main, footer {
         max-width: 960px;
         margin: 0 auto;
     }
 
+/*------------------------------current weather formatting -----------------------------*/
+
+    .cw {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .photoB img {
+        max-width: 300px;
+    }
+
+
+/*----------------------------------------cards formatting------------------------------*/
+   
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 15px;   
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .cards article {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+    }
+    
+    .cards article:nth-child(-n+3) img {
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .cards article:nth-child(-n+3) info {
+        grid-column: 1;
+        grid-row: 1;
+    }    
+
+
+/* ----------------------------about city formatting -------------------------------------------*/
+
     .city-img {
         max-width: 460px;
     }
- 
+
+
+/* -----------------------------format for gallery layout -------------------------- */
+.gallery-container {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.norm:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+
+/* -----------------------------------Storm Center Form formatting ---------------------------------------*/
+form label.sbs {
+    padding: .25rem 0;
+}
+
+
+/*----------------------------------------Contact Info formatting ---------------------------------------*/
+
+.contact {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
 } /*end large */

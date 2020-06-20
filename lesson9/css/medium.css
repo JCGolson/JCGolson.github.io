@@ -1,6 +1,7 @@
 /* 35em is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
 
+    /* -----------------------------header formatting -------------------------------*/
     header {
         padding: 5px;
     }
@@ -11,6 +12,10 @@
     .headings h1 {font-size: 2rem; letter-spacing: .14rem;}
     .headings h2 {font-size: 1.2rem; letter-spacing: .08rem;}
 
+
+
+
+    /*------------------------------------------nav formatting ------------------------------*/
     .navigation {
 		display: flex;
 	}
@@ -28,6 +33,50 @@
 		display: none;
 	}
 
+
+
+/*-------------------------------------current weather formatting --------------------------*/    
+    .photoB img {
+        border-radius: 0;
+        max-width: 600px;
+    }
+
+    .cw_info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+ 
+    
+    
+ /*-----------------------------------cards formatting---------------------------------*/   
+    .cards article {
+        margin: 0 auto 15px auto; 
+        display: grid;
+        grid-template-columns: 1fr 1fr;     
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cards image {
+        width: 90%;
+    }
+       
+    
+    .cards  article:nth-child(even) img {
+          grid-column: 1;
+      }
+      
+    .cards  article:nth-child(even) info {
+          grid-column: 2;
+          grid-row: 1;
+      }    
+
+    .cards p {
+        padding: .75rem;
+    }
+
+
+/*---------------------------------------------weather summary formatting -----------------------------*/
     section.hero {
         max-width: 960px;
     }
@@ -71,7 +120,7 @@
     }
 
     
-/* -------------city formatting --------------*/
+/* ----------------------------------------about city formatting --------------------------------------*/
     .city-article {
         display: block;  
     }
@@ -82,14 +131,34 @@
         max-width: 320px;
     }
 
-/* ------------contact formatting -----------*/
+
+/* -----------------------------format for gallery layout -------------------------- */
+.gallery-container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+
+/* -----------------------------------Storm Center Form formatting ---------------------------------------*/
+form fieldset {
+    padding: .5rem 2%;
+}
+
+form input.submitBtn {
+    margin: 0 0 2rem 2%;
+}
+
+
+
+/* ------------------------------------------------contact formatting ----------------------------------------*/
 
 .contact {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
+
 .map-container{
     display: block;
 }
@@ -97,8 +166,6 @@
 iframe {
     width: 300px; 
     border:0; 
-    /*allowfullscreen="" aria-hidden="false"
-    tabindex="0"*/
 }
 
 .contact-info {
