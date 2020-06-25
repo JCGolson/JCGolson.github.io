@@ -65,51 +65,26 @@
                             <li>Currently:</li>
                             <li>Temperature:</li>
                             <li>Humidity:</li>
-                            <li>Precipitation:</li>
                             <li>Wind Speed:</li>
                             <li>Wind Chill:</li>
                         </ul>
                         <ul class="col2">
-                            <li>Sunny</li>
-                            <li><span id="temp">65</span>&deg; F</li>
-                            <li>69%</li>
-                            <li>0 inches</li>
-                            <li><span id="speed">15</span> mph</li>
-                            <li><span id="chill"> </span></li>
+                            <li><span id="description"></span></li>
+                            <li><span id="currentTemp"></span>&deg; F</li>
+                            <li><span id="humidity"></span>%</li>
+                            <li><span id="windSpeed"></span> mph</li>
+                            <li><span id="chill"></span></li>
                         </ul>
                     </div>
                 </div>
         </section>
 
-        <section class="forecast">
-            <h2>Five day Forecast</h2>
-            <div class="five-day">
-                <div>
-                    <h5>Monday</h5>
-                    <img src="images/cloudy.png" alt="cloudy">
-                    <span>60&deg;</span>
-                </div>
-                <div>
-                    <h5>Tuesday</h5>
-                    <img src="images/chance-storm.png" alt="storm">
-                    <span>50&deg;</span>
-                </div>
-                <div>
-                    <h5>Wednesday</h5>
-                    <img src="images/p-c-snow.png" alt="snow">
-                    <span>30&deg;</span>
-                </div>
-                <div>
-                    <h5>Thursday</h5>
-                    <img src="images/showers.png" alt="showers">
-                    <span>60&deg;</span>
-                </div>
-                <div>
-                    <h5>Friday</h5>
-                    <img src="images/hazy.png" alt="hazy">
-                    <span>75&deg;</span>
-                </div>
+        <section class="five-day-forecast">
+            <h2>5-Day Forecast</h2>
+            <div id="weatherforecast">
+
             </div>
+            
         </section>
         <section class="city">
             <h2>About Preston</h2>
@@ -181,14 +156,14 @@
     </main>
     <div id="footerWrapper">
         <footer>
-            &copy; Juanita Golson &nbsp; &#42; &nbsp; <span id="currentdate"></span>
+            &copy; Juanita Golson &nbsp; &#42; &nbsp; <span id="currentdate"></span> &nbsp; &#42; &nbsp;
+            Weather Data &copy; <a href="https://openweathermap.org/" target="_blank">OpenWeather</a>
+
         </footer>
     </div>
-    <script src="js/scripts.js"></script>
-    <script src="js/banner.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src="js/webfontload.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/weather.js"></script>
 
 </body>
 

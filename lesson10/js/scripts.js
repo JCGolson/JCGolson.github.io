@@ -1,3 +1,13 @@
+//load webfonts 
+WebFont.load({
+    google: {
+      families: [
+         'Roboto', 'Fatface'
+      ]
+    }
+  });
+
+
 //Toggles the hamburger menu on and off
 
 const hambutton = document.querySelector('.ham');
@@ -42,3 +52,45 @@ const monthName = months[d.getMonth()];
 const year = d.getFullYear();
 const fulldate = dayName + ", " + d.getDate() + " " + monthName + " " + year;
 document.getElementById("currentdate").textContent = fulldate;
+
+//code for banner ad
+if (d.getDay() === 5) {
+    document.getElementById("bannerad").hidden = false;
+}
+
+
+
+// Progressive loading images
+var imagesToLoad = document.querySelectorAll('img[data-src]');
+var loadImages = function(image) {
+	image.setAttribute('src', image.getAttribute('data-src'));
+	image.onload = function() {
+		image.removeAttribute('data-src');
+	};
+};
+if('IntersectionObserver' in window) {
+	var observer = new IntersectionObserver(function(items, observer) {
+		items.forEach(function(item) {
+			if(item.isIntersecting) {
+				loadImages(item.target);
+				observer.unobserve(item.target);
+			}
+		});
+	});
+	imagesToLoad.forEach(function(img) {
+		observer.observe(img);
+	});
+}
+else {
+	imagesToLoad.forEach(function(img) {
+		loadImages(img);
+	});
+}
+
+
+
+//Adjusting the value for the slider on the Storm Center page
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
+

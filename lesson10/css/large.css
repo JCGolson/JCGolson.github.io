@@ -18,6 +18,15 @@
     }
 
 
+/* ---------------------------  daily forcast formatting --------------------------------------- */
+
+#weatherforecast  {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+
 /*----------------------------------------cards formatting------------------------------*/
    
     .cards {

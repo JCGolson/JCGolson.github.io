@@ -173,7 +173,7 @@ section h2 {
  }
 
 
-section, section.forecast, section.city, section.contact-section, section.storm {
+section, section.five-day-forecast, section.city, section.contact-section, section.storm {
     background-color: #EEEBD0;
     padding: 2px 3%;
     margin: 10px 0;
@@ -283,6 +283,7 @@ picture.photoA img {width: 100%; height: 100%; display:block;}
     color: #004F2A;
     border-bottom: 3px #004F2A solid;
     text-align: left;
+    margin-bottom: 0;
 }
 
 .summary {
@@ -312,9 +313,38 @@ ul.col2 {
 
 
 /* ---------------------------  daily forcast formatting --------------------------------------- */
-.forecast {display: none;}
+section.five-day-forecast {
+    padding-bottom: 5px;
+}
 
+#weatherforecast {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
+#weatherforecast div {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;  
+    width: 90%;
+    margin: 10px auto;
+    background-color: #fff;
+    border: 1px solid #004F2A;
+}
+
+#weatherforecast div span {
+    display: block;
+    width: 100%;
+    background-color: #004F2A;
+    text-align: center;
+    color: #E5E059;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#weatherforecast div p {
+    margin-top: 0;
+}
 
 /* ----------------------------about city formatting -------------------------------------------*/
 .city-article {

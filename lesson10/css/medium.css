@@ -45,7 +45,20 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
- 
+
+    
+/* ---------------------------  daily forcast formatting --------------------------------------- */
+section.five-day-forecast {
+    padding-bottom: 15px;
+}
+
+#weatherforecast  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
     
     
  /*-----------------------------------cards formatting---------------------------------*/   
