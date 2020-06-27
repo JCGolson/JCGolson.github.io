@@ -174,7 +174,14 @@ section h2 {
 
 
 section, section.five-day-forecast, section.city, section.contact-section, section.storm {
-    background-color: #EEEBD0;
+ /*   background-color: #EEEBD0;*/
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#eeebd0+0,d1e7ee+100 */
+background: #eeebd0; /* Old browsers */
+background: -moz-linear-gradient(left,  #eeebd0 0%, #d1e7ee 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #eeebd0 0%,#d1e7ee 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #eeebd0 0%,#d1e7ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeebd0', endColorstr='#d1e7ee',GradientType=1 ); /* IE6-9 */
+
     padding: 2px 3%;
     margin: 10px 0;
     border: 1px solid #004F2A;
@@ -347,6 +354,19 @@ section.five-day-forecast {
 }
 
 /* ----------------------------about city formatting -------------------------------------------*/
+
+.city h2 {
+    margin-bottom: 2px;
+}
+
+.city a{
+    color: #004F2A;
+}
+
+.city a:hover {
+    color: #0f8eb3;
+}
+
 .city-article {
     display: flex;  
     flex-direction: column-reverse;
@@ -568,6 +588,14 @@ footer {
     font-size: .75rem;
     text-align: center;
 
+}
+
+footer a {
+    color: #E5E059;
+}
+
+footer a:hover {
+    color: #fff;
 }
 
 
