@@ -4,7 +4,7 @@ const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&appid=06b3
 fetch(apiURL)
     .then((response) => response.json())
     .then((weatherInfo) => {
-      //console.log(weatherInfo);
+      console.log(weatherInfo);
 
         //Get weather summary data
         document.getElementById('description').innerHTML = weatherInfo.list[0].weather[0].description;
@@ -29,14 +29,14 @@ fetch(apiURL)
 const t = new Date();
 const todayDayNumber = t.getDay();
 let forecastDayNumber = todayDayNumber;
-//console.log(forecastDayNumber);
+console.log(forecastDayNumber);
 
 const weekday = new Array(7);
   weekday[0] = "Sun";
   weekday[1] = "Mon";
-  weekday[2] = "Tues";
+  weekday[2] = "Tue";
   weekday[3] = "Wed";
-  weekday[4] = "Thurs";
+  weekday[4] = "Thu";
   weekday[5] = "Fri";
   weekday[6] = "Sat";
 
@@ -46,8 +46,7 @@ const weekday = new Array(7);
         for (i=0; i<mylist.length; i++) {
           var time = mylist[i].dt_txt;
           if(time.includes('18:00:00')) {
-             // console.log("found an entry with 21:00 in the time. It was report " + i + " from the mylist of 40");
-    
+             
               forecastDayNumber += 1;
               if (forecastDayNumber===7){
                 forecastDayNumber=0;
@@ -58,9 +57,11 @@ const weekday = new Array(7);
     
             let iconcode = weatherInfo.list[i].weather[0].icon;
             let iconPath = "//openweathermap.org/img/w/" + iconcode + ".png";
-            //console.log(iconPath);
+            console.log(iconPath);
+            let iconAlt = weatherInfo.list[i].weather[0].description;
             let theIcon = document.createElement("img");
             theIcon.src = iconPath;
+            theIcon.alt = iconAlt;
  
             let theTemp = document.createElement("p");
             theTemp.textContent = weatherInfo.list[i].main.temp + "\xb0";
