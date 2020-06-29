@@ -1,0 +1,674 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Abril Fatface', cursive;
+    color: #004F2A;
+}
+
+
+
+/* -------------------------------header formatting here---------------------------------- */
+
+div#headerWrapper {background-color: #004F2A;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    padding: 5px 0 10px 0;
+}
+
+header img {
+    width: 80px;
+    padding: 2px 2%;
+}
+
+.headings h1, h2 {
+    color: #E5E059;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.headings h1 {
+    font-size: 1.7rem;
+}
+
+.headings h2 {
+    font-size: 1rem;
+    letter-spacing: .03rem;
+}
+
+
+
+/* ------------------------nav formatting here--------------------------- */
+    div#navWrapper {
+   background: rgb(15,142,179); /* Old browsers */
+   background: -moz-linear-gradient(top,  rgba(15,142,179,1) 0%, rgba(69,176,207,1) 100%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(top,  rgba(15,142,179,1) 0%,rgba(69,176,207,1) 100%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom,  rgba(15,142,179,1) 0%,rgba(69,176,207,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f8eb3', endColorstr='#45b0cf',GradientType=0 ); /* IE6-9 */
+ }
+
+nav {
+    margin: 0 auto;
+    max-width: 100%;
+    color: #000;
+    padding: 0;
+    }
+    
+    .navigation {
+        list-style: none;
+        padding: 0;
+        margin-top: 0;
+    }
+
+
+    .navigation li:first-child {
+        display: block;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    .navigation a {
+        display: block;
+        padding: .8rem 3%;
+        color: #000;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: left;
+        border-top: 1px solid rgba(255,255,255,0.2)
+    }
+    
+    .navigation a.active {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#004f2a+0,1b7f50+100 */
+background: rgb(0,79,42); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(0,79,42,1) 0%, rgba(27,127,80,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,79,42,1) 0%,rgba(27,127,80,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,79,42,1) 0%,rgba(27,127,80,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004f2a', endColorstr='#1b7f50',GradientType=0 ); /* IE6-9 */
+        color: #E5E059;
+       font-weight: bold;
+    }
+    
+    .navigation a:hover {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e5e059+0,f3ef88+100 */
+background: rgb(229,224,89); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(229,224,89,1) 0%, rgba(243,239,136,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(229,224,89,1) 0%,rgba(243,239,136,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(229,224,89,1) 0%,rgba(243,239,136,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e059', endColorstr='#f3ef88',GradientType=0 ); /* IE6-9 */
+        color: #004F2A;
+        font-weight: bold;
+    } 
+
+    .container {
+        display: inline-block;
+        cursor: pointer;
+      }
+      
+      .bar1, .bar2, .bar3 {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px 0;
+        transition: 0.4s;
+      }
+      
+      .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+      }
+      
+      .change .bar2 {opacity: 0;}
+      
+      .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-4px, -4px);
+        transform: rotate(45deg) translate(-4px, -4px);
+      }
+
+    .responsive li {
+        display: block;
+    }
+
+
+/* -----------------------------------main formatting here----------------------------------------- */
+
+ main {
+     max-width: 100%;
+     padding: 5px 3%;
+
+ }
+ 
+main h1 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+section h2 {
+    color: #004F2A; 
+    font-size: 1.2rem;
+    padding-top: 6px;
+    margin-bottom: 15px;
+ }
+
+
+section, section.five-day-forecast, section.city, section.contact-section, section.storm {
+ /*   background-color: #EEEBD0;*/
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#eeebd0+0,d1e7ee+100 */
+background: #eeebd0; /* Old browsers */
+background: -moz-linear-gradient(left,  #eeebd0 0%, #d1e7ee 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #eeebd0 0%,#d1e7ee 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #eeebd0 0%,#d1e7ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeebd0', endColorstr='#d1e7ee',GradientType=1 ); /* IE6-9 */
+
+    padding: 2px 3%;
+    margin: 10px 0;
+    border: 1px solid #004F2A;
+}
+
+
+
+
+/* --------------------------------- current weather - home page formatting ---------------*/
+div.cw {
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 0 0 10px 0;
+}
+.photoB img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 200px;
+    margin: 10px auto;
+}
+
+.cw_info p {
+    text-align: left;
+    margin: 0 15px 10px 15px;
+    
+}
+
+
+/* --------------------------------------- card formatting --------------------------------- */
+
+
+.cards article {
+    background-color: #c4ead8;
+    border: 1px solid #004F2A;
+    justify-items: center;
+    padding: 0;
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 50px 0 50px 0;
+    
+}
+
+.cards article img {
+    display: block;
+    width: 100%;
+    border-radius: 50px 0 50px 0;
+}
+
+
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0 0 0;
+}
+
+h4 {
+    text-align: center;
+    font-style: italic;
+    margin: 5px 0 15px 0;
+}
+
+.cards p {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+
+
+/* --------------------------------- weather summary section ------------------------------------*/
+section.hero {
+    margin: 10px 0;
+    padding: 0;
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+    border: 2px solid #004F2A;
+}
+
+picture.photoA {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+picture.photoA img {width: 100%; height: 100%; display:block;}
+
+.stats {
+    position: absolute;
+	top: 25px;
+	left: 25px;
+	background: radial-gradient(#fff, #c4ead8 );
+	border: 1px solid #004F2A;
+	padding: 1rem;
+	box-shadow: 0 0 30px #111;
+    opacity: .9;
+}
+
+.stats h2 {
+    display: block;
+    color: #004F2A;
+    border-bottom: 3px #004F2A solid;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+ul.col1 {
+    list-style-type: none;
+    text-align:right;
+    padding-left: 0;
+    color: #000;
+    line-height: 1.3rem;
+}
+
+ul.col2 {
+    list-style-type: none;
+    text-align:left;
+    padding-left: 15px;
+    color: #0F8EB3;
+    line-height: 1.3rem;
+    font-weight: bold;
+}
+
+
+
+
+
+/* ---------------------------  daily forcast formatting --------------------------------------- */
+section.five-day-forecast {
+    padding-bottom: 5px;
+}
+
+#weatherforecast {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#weatherforecast div {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;  
+    width: 90%;
+    margin: 10px auto;
+    background-color: #fff;
+    border: 1px solid #004F2A;
+}
+
+#weatherforecast div span {
+    display: block;
+    width: 100%;
+    background-color: #004F2A;
+    text-align: center;
+    color: #E5E059;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#weatherforecast div p {
+    margin-top: 0;
+}
+
+/* ----------------------------about city formatting -------------------------------------------*/
+
+.city h2 {
+    margin-bottom: 2px;
+}
+
+.city a{
+    color: #004F2A;
+}
+
+.city a:hover {
+    color: #0f8eb3;
+}
+
+.city-article {
+    display: flex;  
+    flex-direction: column-reverse;
+    
+}
+
+    
+.city-img img {
+    max-width: 100%;
+}
+
+
+/* -----------------------------format for gallery layout -------------------------- */
+.gallery-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+.norm  {
+    display: block;
+    padding: 0;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px #ccc solid;
+    background-color: #fff;
+}
+
+.norm img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+    display: block;
+    width: 100%;
+}
+
+
+span.caption {
+    display: block;
+    height: 30px;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+
+/* -----------------------------------Storm Center Form formatting ---------------------------------------*/
+
+input,
+button,
+select,
+textarea {
+    padding: 0.5rem;
+    margin-bottom: .25rem;
+}
+
+form fieldset {
+    background-color: #c2e4ee;
+    color: #004F2A;
+    border: 1px solid #004F2A;
+    border-radius: 10px;
+    padding: .5rem 6%;
+    margin-bottom: 1.2rem;
+}
+
+form legend {
+    color: #004F2A;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: .8rem;
+    padding-bottom: .4rem;
+    color: #004F2A;
+}
+
+form label.top input,
+form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+}
+
+form label div.range {
+    display: flex;
+}
+
+form label.slidehead {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+span.slider {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding-top: 0;
+}
+
+input#rating {
+    padding: 3px 0;
+    width: 90%;
+    max-width: 18rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+}
+
+textarea#comments {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    width: 100%;
+    max-width: 20rem;
+    height: 10rem;
+}
+
+form input.submitBtn {
+    background: rgb(15, 142, 179);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(15, 142, 179, 1) 0%, rgba(69, 176, 207, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(15, 142, 179, 1) 0%, rgba(69, 176, 207, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(15, 142, 179, 1) 0%, rgba(69, 176, 207, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0f8eb3', endColorstr='#45b0cf', GradientType=0);
+    /* IE6-9 */
+    border: none;
+    color: #000;
+    border-radius: 4px;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 6%;
+    width: 96%;
+    max-width: 15rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+form input.submitBtn:hover {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e5e059+0,f3ef88+100 */
+    background: rgb(229, 224, 89);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(229, 224, 89, 1) 0%, rgba(243, 239, 136, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(229, 224, 89, 1) 0%, rgba(243, 239, 136, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(229, 224, 89, 1) 0%, rgba(243, 239, 136, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e059', endColorstr='#f3ef88', GradientType=0);
+    /* IE6-9 */
+    color: #004F2A;
+}
+
+
+/* ------------------------------contact section formatting ------------------------------------------*/
+
+.contact {
+    padding: 10px 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info p {
+    margin:0;
+    padding-top: 2px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.social {    
+    display: flex;
+    flex-direction: row;
+}
+
+.social img {
+    width: 30px;
+    margin:  3% 0 0 2%;
+}
+
+.map-container{
+    display: none;
+}
+
+
+ /* ------------------------------footer formatting here---------------------------------------------- */
+div#footerWrapper {background-color: #004F2A;}
+
+footer {
+    padding:10px 3%;
+    color: #E5E059;
+    font-size: .75rem;
+    text-align: center;
+
+}
+
+footer a {
+    color: #E5E059;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+
+/* ------------------------------- formatting for banner ad-------------------------------------  */
+
+.marquee {
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+    letter-spacing: .15rem;
+   
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e7e497+1,fafffc+50,fafffc+51,e7e497+100 */
+        background: #e7e497;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #e7e497 1%, #fafffc 50%, #fafffc 51%, #e7e497 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #e7e497 1%, #fafffc 50%, #fafffc 51%, #e7e497 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #e7e497 1%, #fafffc 50%, #fafffc 51%, #e7e497 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7e497', endColorstr='#e7e497', GradientType=0);
+        /* IE6-9 */
+    
+        box-shadow: 0 0 10px #111;
+   }
+   
+   .marquee h5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: scroll-left 30s linear infinite;
+    -webkit-animation: scroll-left 30s linear infinite;
+    animation: scroll-left 30s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes scroll-left {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+   }
+   @-webkit-keyframes scroll-left {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
+   @keyframes scroll-left {
+    0%   { 
+    -moz-transform: translateX(100%); /* Browser bug fix */
+    -webkit-transform: translateX(100%); /* Browser bug fix */
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Browser bug fix */
+    -webkit-transform: translateX(-100%); /* Browser bug fix */
+    transform: translateX(-100%); 
+    }
+   }
+   
+
+   /*---------------------------------------Wireframe Formatting -------------------------------------*/
+   .wireframe {
+       display: block;
+       width: 100%;
+   }
+   
+   .wireframe img {
+       display: block;
+       max-width: 100%;
+   }

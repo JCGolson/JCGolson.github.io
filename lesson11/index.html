@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gem State News Home</title>
+    <meta name="description"
+        content="The layout for the home page for Juanita Golson's weather site project for WDD 230. ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+ 
+</head>
+
+<body>
+
+    <div id="headerWrapper">
+        <header>
+            <img src="images/cloud-and-sun.png" alt="Cloud & Sun">
+            <div class="headings">
+                <h1>Gem State News</h1>
+                <h2>Where the weather counts</h2>
+            </div>
+        </header>
+    </div>
+    <div id="navWrapper">
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham">
+                        <div class="container" onclick="myFunction(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </a></li>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h1>Welcome to Gem State News</h1>
+
+        <section>
+            <h2>Current Weather Story</h2>
+            <div class="cw">
+                <picture class="photoB">
+                    <source media="(max-width: 450px)" srcset="images/icy-weather-300x300.jpg">
+                    <source media="(max-width: 800px)" srcset="images/icy-weather-800x388.jpg">
+                    <img src="images/icy-weather-300x400.jpg" alt="Icy Weather">
+                </picture>
+              <div class="cw_info">
+                <p>A blast of winter weather is forecast to hit East Idaho on Sunday night thanks to a fast-moving cold front.</p>
+
+                <p>The National Weather Service has issued alerts calling for snow, rain and winds of up to 45 mph in East Idaho on Sunday night as the cold front passes through.</p>
+                
+                <p>The Salmon, Island Park, Driggs, Victor and Tetonia areas are forecast to be hardest hit by the cold front's precipitation and will likely receive 4 to 5 inches of snow on Sunday night. East Idaho's other higher elevation areas are forecast to receive 1 to 3 inches of snow.</p>
+                
+                <p>East Idaho's lower elevations including the Pocatello, Chubbuck, American Falls, Aberdeen, Fort Hall, Blackfoot, Idaho Falls, Ammon, Rigby, Rexburg, Preston and Malad areas could receive rain, light snow or a rain-snow mix on Sunday night with less than a half-inch of snow accumulation expected.</p>
+
+                <p>It's possible that the rain, snow and high winds caused by the cold front could linger into Monday morning in some areas of East Idaho.</p>
+
+                <p>The weather service said the cold front could cause hazardous driving conditions in East Idaho and motorists are advised to drive carefully, especially in the region's higher elevations.</p>
+
+                <p>The front's winds of up to 45 mph are expected to hit hardest in the Burley, Rupert, Heyburn, Paul, Oakley, Albion, Almo, Malta, Declo, Raft River, Rockland, Holbrook, Inkom, McCammon, Arimo, Downey, Swanlake, Lava Hot Springs, Malad, Preston and Thatcher areas.</p>
+
+                <p>The winds will be strong enough to knock down tree branches and could cause power outages, the weather service said. East Idaho residents are being encouraged to secure objects such as trash cans and lawn furniture so that the winds don't turn those items into destructive projectiles.</p>
+
+                <p>The cold front has also triggered weather alerts for the central Idaho mountains including the Stanley area, where up to 5 inches of snow could fall on Sunday night.</p>
+
+                <p>Winter weather advisories and/or winter storm warnings are in effect in North Idaho as well as in Washington state, Oregon, Montana and Wyoming because of the cold front and all of Utah is under a hazardous weather alert.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Town Information</h2>
+            <div class="cards">
+            </div>
+        </section>
+        <section class="contact-section">
+
+            <h2>Contact Us</h2>
+
+            <div class="contact">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23683.041049710246!2d-111.89564946246662!3d42.099328959520946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7ecfeb7b869%3A0x8abd165683b62e8d!2sPreston%20Ave%2C%20Preston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1590171457324!5m2!1sen!2sus"></iframe>
+                </div>
+                <div class="contact-info">
+                    <div class="c1">
+                        <p><b>Gem State News</b></p>
+                        <p>&#128681;300 Preston Ave</p>
+                        <p>Preston, ID 83263</p>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="c2">
+
+                        <p>☎ (555) 555-2378</p>
+                        <p>📧 gemstatenews@gsn.com</p>
+                        <div class="social">
+                            <img src="images/Facebook.png" alt="Facebook">
+                            <img src="images/Twitter.png" alt="Twitter">
+                            <img src="images/Linkedin.png" alt="Linkedin">
+                            <img src="images/Instagram.png" alt="Instagram">
+                            <img src="images/Pinterest.png" alt="Pinterest">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <a href="wireframes.html">Wireframe Views</a>
+    </main>
+    <div id="footerWrapper">
+        <footer>
+            &copy; Juanita Golson &nbsp; &#42; &nbsp; <span id="currentdate"></span>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/town_info.js"></script>
+ </body>
+
+</html>
