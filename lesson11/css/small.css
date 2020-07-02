@@ -443,6 +443,7 @@ textarea {
 }
 
 form fieldset {
+    background: radial-gradient(#fff, #c2e4ee);
     background-color: #c2e4ee;
     color: #004F2A;
     border: 1px solid #004F2A;
