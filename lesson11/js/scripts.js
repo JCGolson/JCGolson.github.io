@@ -53,14 +53,6 @@ const year = d.getFullYear();
 const fulldate = dayName + ", " + d.getDate() + " " + monthName + " " + year;
 document.getElementById("currentdate").textContent = fulldate;
 
-//code for banner ad
-if (d.getDay() === 5) {
-    document.getElementById("bannerad").hidden = false;
-}
-
-
-
-
 
 //Adjusting the value for the slider on the Storm Center page
 function adjustRating(rating) {
