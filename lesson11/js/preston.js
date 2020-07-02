@@ -97,7 +97,7 @@ fetch(requestURL)
         const home = towns.filter(town => (town.name == 'Preston'));
  
         home.forEach(town => {
-            let prestonEvents = document.createElement('article');
+            let ourEvents = document.createElement('article');
             let eventList = document.createElement('ul');
 
             const townEvents = town.events;
@@ -108,7 +108,7 @@ fetch(requestURL)
             }
             console.log(townEvents);
 
-            document.getElementById('prestonEvents').appendChild(eventList);
+            document.getElementById('ourEvents').appendChild(eventList);
         })
         });
  

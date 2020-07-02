@@ -1,5 +1,5 @@
 //Getting the data for Soda Spring's weather
-const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5607916&appid=06b398ce5a9a3ebc9b95042ec888e67b&units=imperial"
+const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5585000&appid=06b398ce5a9a3ebc9b95042ec888e67b&units=imperial"
 
 fetch(apiURL)
     .then((response) => response.json())
@@ -94,7 +94,7 @@ fetch(requestURL)
         console.table(jsonObject); //temporary checking for valid response and data parsing
 
         const towns = jsonObject['towns'];
-        const home = towns.filter(town => (town.name == 'Soda Springs'));
+        const home = towns.filter(town => (town.name == 'Fish Haven'));
  
         home.forEach(town => {
             let ourEvents = document.createElement('article');
