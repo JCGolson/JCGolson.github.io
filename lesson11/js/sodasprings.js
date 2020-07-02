@@ -4,7 +4,6 @@ const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5607916&appid=06b3
 fetch(apiURL)
     .then((response) => response.json())
     .then((weatherInfo) => {
-      //console.log(weatherInfo);
 
         //Get weather summary data
         document.getElementById('description').innerHTML = weatherInfo.list[0].weather[0].description;
@@ -29,7 +28,6 @@ fetch(apiURL)
 const t = new Date();
 const todayDayNumber = t.getDay();
 let forecastDayNumber = todayDayNumber;
-//console.log(forecastDayNumber);
 
 const weekday = new Array(7);
   weekday[0] = "Sun";
@@ -57,7 +55,6 @@ const weekday = new Array(7);
     
             let iconcode = weatherInfo.list[i].weather[0].icon;
             let iconPath = "//openweathermap.org/img/w/" + iconcode + ".png";
-            //console.log(iconPath);
             let iconAlt = weatherInfo.list[i].weather[0].description;
             let theIcon = document.createElement("img");
             theIcon.src = iconPath;
@@ -91,8 +88,7 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
-        console.table(jsonObject); //temporary checking for valid response and data parsing
-
+ 
         const towns = jsonObject['towns'];
         const home = towns.filter(town => (town.name == 'Soda Springs'));
  
@@ -106,7 +102,6 @@ fetch(requestURL)
                 listItem.textContent = townEvents[j];
                 eventList.appendChild(listItem);
             }
-            console.log(townEvents);
 
             document.getElementById('ourEvents').appendChild(eventList);
         })

@@ -5,7 +5,6 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
-     console.table(jsonObject); //temporary checking for valid response and data parsing
        
        const towns = jsonObject['towns'];
        const home = towns.filter(town => (town.name == 'Fish Haven' || town.name == 'Preston' || town.name == 'Soda Springs'));
