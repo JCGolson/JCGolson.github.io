@@ -211,7 +211,7 @@ div.cw {
 
 
 .cards article {
-    background: radial-gradient(#fff, #c4ead8 );
+    background: radial-gradient(#fff, #c2e4ee );
     border: 3px solid #004F2A;
     justify-items: center;
     padding: 0;
@@ -224,7 +224,7 @@ div.cw {
 .cards article img {
     display: block;
     width: 100%;
-    border-radius: 50px 0 50px 0;
+    border-radius: 45px 0 45px 0;
 }
 
 
