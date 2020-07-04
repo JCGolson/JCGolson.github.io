@@ -411,14 +411,24 @@ section.five-day-forecast {
     display: block;
     padding: 0;
     margin: 10px 0;
+    padding: 10px;
     width: 100%;
-    border: 1px #ccc solid;
-    background-color: #fff;
+    border-radius: 0 50px 0 0;
+    border: 1px #004F2A solid;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,c2e4ee+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #ffffff 0%, #c2e4ee 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #ffffff 0%,#c2e4ee 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #ffffff 0%,#c2e4ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c2e4ee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
 }
 
 .norm img {
     filter: blur(0em);
     transition: filter 0.5s;
+    border-radius: 0 40px 0 40px;
     display: block;
     width: 100%;
 }
@@ -429,6 +439,7 @@ span.caption {
     height: 30px;
     padding-left: 5px;
     margin-top: 10px;
+    color: #004F2A;
 }
 
 
