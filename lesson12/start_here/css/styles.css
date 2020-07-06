@@ -454,7 +454,7 @@ body {
 
 header {
   background-color: #14BDEB;
-  padding: 1rem 2%;
+  padding: 1rem 4%;
 }
 header h1 {
   margin: 0;
@@ -494,7 +494,7 @@ nav a:hover {
 
 main {
   display: block;
-  padding: 1rem 2%;
+  padding: 1rem 4%;
 }
 main h1 {
   color: #14BDEB;
@@ -515,7 +515,7 @@ main figcaption {
 footer {
   background-color: #14BDEB;
   text-align: center;
-  padding: 1rem 2%;
+  padding: 1rem 4%;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -552,7 +552,7 @@ footer {
   }
 
   nav ul {
-    padding-left: 2%;
+    padding-left: 4%;
   }
 
   nav li {
