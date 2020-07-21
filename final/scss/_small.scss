@@ -369,19 +369,19 @@ section.five-day-forecast {
     margin: 10px auto;
     background: radial-gradient(#fff, $fifthColor);
     overflow: hidden;
-    border: 2px solid $primaryColor;
+    border: 1px solid $primaryColor;
     border-radius: 10px;
 
     span {
       display: block;
       width: 100%;
       text-align: center;
-      background-color: $fourthColor;
-      @include gradient( $fourthColor, $fifthColor);
-      color: $primaryColor;
+      background-color: $secondaryColor;
+      @include gradient( $secondaryColor, $fourthColor);
+      color: white;
       padding: 5px 0;
       font-family: $headingFont;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       border-bottom: 1px solid $primaryColor;
     }
     
