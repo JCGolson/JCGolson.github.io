@@ -376,9 +376,9 @@ section.five-day-forecast {
       display: block;
       width: 100%;
       text-align: center;
-      background-color: $secondaryColor;
-      @include gradient($secondaryColor, $fourthColor);
-      color: white;
+      background-color: $fourthColor;
+      @include gradient( $fourthColor, $fifthColor);
+      color: $primaryColor;
       padding: 5px 0;
       font-family: $headingFont;
       font-size: 1.3rem;
@@ -443,7 +443,7 @@ hr.style-seven:before {
       padding: 10px 0;
       width: 100%;
       font-size: 1.2rem;
-      background-color: $fourthColor;
+      background-color: $seventhColor;
       @include gradient($primaryColor, $seventhColor);
       color: white;
       text-align: center;

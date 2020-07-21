@@ -373,12 +373,12 @@ section.five-day-forecast {
   display: block;
   width: 100%;
   text-align: center;
-  background-color: #c37407;
-  background-color: #c37407;
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c37407, endColorstr=#f5ba05);
-  background-image: -moz-linear-gradient(center top, #c37407, #f5ba05);
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c37407), to(#f5ba05));
-  color: white;
+  background-color: #f5ba05;
+  background-color: #f5ba05;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#f5ba05, endColorstr=#f7e6a4);
+  background-image: -moz-linear-gradient(center top, #f5ba05, #f7e6a4);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f5ba05), to(#f7e6a4));
+  color: #4d5f11;
   padding: 5px 0;
   font-family: "Bubblegum Sans", cursive;
   font-size: 1.3rem;
@@ -433,7 +433,7 @@ hr.style-seven:before {
   padding: 10px 0;
   width: 100%;
   font-size: 1.2rem;
-  background-color: #f5ba05;
+  background-color: #8bab1f;
   background-color: #4d5f11;
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#4d5f11, endColorstr=#8bab1f);
   background-image: -moz-linear-gradient(center top, #4d5f11, #8bab1f);
