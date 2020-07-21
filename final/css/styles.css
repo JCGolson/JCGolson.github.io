@@ -769,15 +769,14 @@ footer a {
 
 @media only screen and (min-width: 35rem) {
   header img {
-    width: 100px;
+    width: 75px;
+    height: auto;
   }
-  header h1 {
-    font-size: 3.5rem;
-    margin-bottom: 50px;
+  header .headings h1 {
+    font-size: 3rem;
   }
-  header p {
-    font-size: 1.7rem;
-    margin-top: 50px;
+  header .headings p {
+    font-size: 1.5rem;
   }
 
   .top-view {
@@ -891,11 +890,11 @@ footer a {
   header .headings {
     margin-left: 20px;
   }
-  header h1 {
-    font-size: 5rem;
+  header .headings h1 {
+    font-size: 4.55rem;
   }
-  header p {
-    font-size: 2.5rem;
+  header .headings p {
+    font-size: 2rem;
   }
 
   .slideshow {
