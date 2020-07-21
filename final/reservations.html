@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <meta name="description"
+    content="Choose your rental options by type, price and accomodations, along with the length of time you want it.">
+    <script src="https://kit.fontawesome.com/fb6bd37446.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="favicon.ico" rel="shortcut icon">
+</head>
+
+<body>
+    <header>
+        <img src="images/scoots_logo.jpg" alt="~Scoots logo">
+        <div class="headings">
+            <h1>~Scoots</h1>
+            <p>For the DIY Tourist</p>
+        </div>
+    </header>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="rentals.html"><i class="far fa-list-alt"></i> Rentals</a>
+        <a  class="active" href="reservations.html"><i class="fas fa-file-invoice-dollar"></i> Reservations</a>
+        <a href="tours.html"><i class="fas fa-biking"></i> Tours</a>
+        <a href="contact.html"><i class="fas fa-envelope-open-text"></i> Contact</a>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <main>
+       
+        <form method="get" action="thanks.html">
+          <fieldset>
+              <legend>Rental Choice(s)</legend>
+              <label class="top">Date <input type="date" name="stormdate"></label>
+              <div>Rental Period</div>
+              <label class="sbs"><input type="radio" name="period" value="half"> Half-day (3 hrs)</label>
+              <label class="sbs"><input type="radio" name="period" value="full"> Full Day</label>
+              <label class="sbs"><input type="radio" name="period" value="multi"> Multiple Days</label>
+
+              <label class="top">Rental Type<input list="rentaltype">
+                  <datalist id="rentaltype">
+                      <option value="Honda Metro Scooter">
+                      <option value="Honda Dio Scooter">
+                      <option value="Honda PCX150 Scooter">
+                      <option value="Honda Pioneer ATV">
+                      <option value="Jeep Wrangler - 4 door with a/c">
+                      <option value="Jeep Wrangler - 2 door">
+                  </datalist>
+              </label>
+                  
+                <label class="slidehead" for="rating">Number of Rental Vehicles Needed:
+                    <span class="slider">
+                        <input type="range" id="rating" value="4" min="1" max="10" step="1" list="tickmarks"
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">&nbsp;&nbsp;&nbsp;4</span>
+                        <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="7">
+                            <option value="8">
+                            <option value="9">
+                            <option value="10">
+                        </datalist>
+                    </span>
+                </label>
+
+
+          </fieldset>
+          <hr class="style-seven">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label class="top">Phone Number<input type="tel" name="phone" placeholder="123-555-1234"
+                required></label>
+        <label class="top">Full Name<input type="text" name="fname" required pattern="[A-z\s]{5,}"></label>
+            <label class="top">Email<input type="email" name="email" required placeholder="user@email.com"></label>
+            <label class="top">Home State or Country<input type="text" name="state" required></label>
+        </fieldset>
+        <hr class="style-seven">
+          <fieldset>
+              <legend>Additional Information</legend>
+              <label class="top">Cruise Line (if applicable)<input type="text" name="cruise" ></label>
+              <label class="top">Special Accomodations or Comments</label>
+              <p>i.e. the need and location of a drop-off request</p>
+              <textarea name="comments" id="comments"></textarea>
+          </fieldset>
+
+          <input type="submit" value="Reserve Now!" class="classname">
+
+
+
+      </form>
+  
+  <section>
+    <hr class="style-seven">
+    <h2>Contact Us</h2>
+    <div class="locations">
+      <div class="loc">
+        <h3>Playa Carmen Location</h3>
+        <p>Av Lic Benito Juárez 8, Centro<br>
+          77600 San Miguel de Cozumel<br>
+          Q.R., Mexico</p>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34043.583402073906!2d-86.95082915502167!3d20.513611813556142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cf3a0ece15%3A0x9216e3c2b55e5526!2sPlaya%20del%20Carmen-Cozumel%20Ferry%20Dock!5e0!3m2!1sen!2sus!4v1594829624553!5m2!1sen!2sus"></iframe>
+        </div>
+      </div>
+      <div class="loc">
+        <h3>Near Terminal Puerta Maya</h3>
+        <p>Av. Rafael E. Melgar 3<br>
+          77600 Q.R., Mexico</p>
+        <br class="hidden">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13709.765100329376!2d-86.97059817095278!3d20.479513888845034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5748bac98d29%3A0xec697a2a774f7a00!2sPuerta%20Maya%20Cruise%20Ship%20Terminal!5e0!3m2!1sen!2sus!4v1594824018960!5m2!1sen!2sus"></iframe>
+        </div>
+      </div>
+      <div class="social">
+        <h3>Social</h3>
+        <div class="links">
+          <a href="https://facebook.com" target="_blank"><img src="images/Facebook.png" alt="Facebook"></a>
+          <a href="https://twitter.com" target="_blank"><img src="images/Twitter.png" alt="Twitter"></a>
+          <a href="https://linkedin.com" target="_blank"><img src="images/Linkedin.png" alt="LinkedIn"></a>
+          <a href="https://instagram.com" target="_blank"><img src="images/Instagram.png" alt="Instagram"></a>
+          <a href="https://pinterest.com" target="_blank"><img src="images/Pinterest.png" alt="Pinterest"></a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+      </main>
+      <footer>
+        &copy; <span id="year"></span>&nbsp; |&nbsp; <a href="attributions.html" target="_blank">Attributions</a> &nbsp;|
+        &nbsp;<span id="updated">Last Updated: <span id="lastupdated"></span></span>
+    
+      </footer>
+    
+    <script src="js/scripts.js"></script>
+    <script src="js/rating.js"></script>
+</body>
+
+</html>

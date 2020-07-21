@@ -1,0 +1,18 @@
+$primaryColor: #4d5f11;
+$secondaryColor: #c37407;
+$thirdColor: #edc948;
+$fourthColor: #f5ba05;
+$fifthColor: #f7e6a4;
+$sixthColor: #bfeb2a;
+$seventhColor: #8bab1f;
+
+$headingFont: 'Bubblegum Sans', cursive;
+$textFont: 'Lato', sans-serif;
+$pageMargin: 30px;
+
+@mixin gradient($color1, $color2) {
+    background-color: $color1;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$color1}, endColorstr=#{$color2});
+    background-image: -moz-linear-gradient(center top, $color1, $color2);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color1), to($color2));
+}

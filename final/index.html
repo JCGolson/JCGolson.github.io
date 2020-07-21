@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>~Scoots Home</title>
+  <meta name="description"
+    content="Come see Cozumel in your own time and pace by renting a scooter, ATV or Jeep Wrangler from ~Scoots.">
+  <script src="https://kit.fontawesome.com/fb6bd37446.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="favicon.ico" rel="shortcut icon">
+</head>
+
+<body>
+  <header>
+    <img src="images/scoots_logo.jpg" alt="~Scoots logo">
+    <div class="headings">
+      <h1>~Scoots</h1>
+      <p>For the DIY Tourist</p>
+    </div>
+
+  </header>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+    <a href="rentals.html"><i class="far fa-list-alt"></i> Rentals</a>
+    <a href="reservations.html"><i class="fas fa-file-invoice-dollar"></i> Reservations</a>
+    <a href="tours.html"><i class="fas fa-biking"></i> Tours</a>
+    <a href="contact.html"><i class="fas fa-envelope-open-text"></i> Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <main>
+
+
+    <!-- --------------------------------- Photo Carousel -------------------------------------- -->
+    <section>
+      <h2>Come See Cozumel</h2>
+      <p>Cozumel Island is one of the best destinations in Mexico and definitely not to be missed during your travels in
+        Central America.</p>
+
+      <div class="top-view">
+        <div class="slideshow">
+
+          <input type="radio" id="bouton-1" name="radio-set" class="selecteur-1" checked="checked" />
+          <label for="bouton-1" class="bouton-label-1"></label>
+
+          <input type="radio" id="bouton-2" name="radio-set" class="selecteur-2" />
+          <label for="bouton-2" class="bouton-label-2"></label>
+
+          <input type="radio" id="bouton-3" name="radio-set" class="selecteur-3" />
+          <label for="bouton-3" class="bouton-label-3"></label>
+
+          <input type="radio" id="bouton-4" name="radio-set" class="selecteur-4" />
+          <label for="bouton-4" class="bouton-label-4"></label>
+
+          <input type="radio" id="bouton-5" name="radio-set" class="selecteur-5" />
+          <label for="bouton-5" class="bouton-label-5"></label>
+
+
+          <label for="bouton-1" class="arrow a1"></label>
+          <label for="bouton-2" class="arrow a2"></label>
+          <label for="bouton-3" class="arrow a3"></label>
+          <label for="bouton-4" class="arrow a4"></label>
+          <label for="bouton-5" class="arrow a5"></label>
+
+          <div class="contenu">
+            <ul class="slider">
+              <!--clearfix-->
+              <li><img src="images/hibiscus-3524557_600.jpg" alt="Hibiscus" /></li>
+              <li><img src="images/cozumel-1351419_600.jpg" alt="Cozumel" /></li>
+              <li><img src="images/reef-snorkeling-377390_600.jpg" alt="Snorkeling" /></li>
+              <li><img src="images/600px-freeimage-9068075-web.jpg" alt="Beach Scene" /></li>
+              <li><img src="images/beach-144571_600.jpg" alt="Beach scene" /></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- -------------------------------- current weather stats -------------------------------- -->
+        <div class="container1">
+          <div class="stats">
+            <h2>Weather Summary</h2>
+            <div class="summary">
+              <ul class="col1">
+                <li>Currently:</li>
+                <li>Temperature:</li>
+                <li>Humidity:</li>
+                <li>Wind Speed:</li>
+              </ul>
+              <ul class="col2">
+                <li><span id="description"></span></li>
+                <li><span id="currentTemp"></span>&deg; F</li>
+                <li><span id="humidity"></span>%</li>
+                <li><span id="windSpeed"></span> mph</li>
+              </ul>
+            </div>
+          </div>
+         
+          <a href="rentals.html" class="classname">Make Your Choice!</a>
+        
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <hr class="style-seven">
+      <h2>Rentals</h2>
+      <p>One of the top things to do in Cozumel when you arrive is to rent a scooter, ATV or Jeep and drive around the
+        entire island. The coastal road around Cozumel takes no more than 2 hours to do a complete circuit and it boasts
+        the most incredible tropical scenery you can imagine!</p>
+
+      <p><strong>~Scoots</strong> has rentals for all three types of transportation. You can get an idea of the type of
+        transportation that would work best for you by looking below.</p>
+      <div class="photoLists">
+
+      </div>
+
+      <div class="cards">
+      </div>
+
+    </section>
+
+    <section class="five-day-forecast">
+      <hr class="style-seven">
+      <h2>5-Day Forecast</h2>
+      <div id="weatherforecast">
+
+      </div>
+
+    </section>
+    <section>
+      <hr class="style-seven">
+      <h2>Contact Us</h2>
+      <div class="locations">
+        <div class="loc">
+          <h3>Playa Carmen Location</h3>
+          <p>Av Lic Benito Juárez 8, Centro<br>
+            77600 San Miguel de Cozumel<br>
+            Q.R., Mexico</p>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34043.583402073906!2d-86.95082915502167!3d20.513611813556142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cf3a0ece15%3A0x9216e3c2b55e5526!2sPlaya%20del%20Carmen-Cozumel%20Ferry%20Dock!5e0!3m2!1sen!2sus!4v1594829624553!5m2!1sen!2sus"></iframe>
+          </div>
+        </div>
+        <div class="loc">
+          <h3>Near Terminal Puerta Maya</h3>
+          <p>Av. Rafael E. Melgar 3<br>
+            77600 Q.R., Mexico</p>
+          <br class="hidden">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13709.765100329376!2d-86.97059817095278!3d20.479513888845034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5748bac98d29%3A0xec697a2a774f7a00!2sPuerta%20Maya%20Cruise%20Ship%20Terminal!5e0!3m2!1sen!2sus!4v1594824018960!5m2!1sen!2sus"></iframe>
+          </div>
+        </div>
+        <div class="social">
+          <h3>Social</h3>
+          <div class="links">
+            <a href="https://facebook.com" target="_blank"><img src="images/Facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/Twitter.png" alt="Twitter"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="images/Linkedin.png" alt="LinkedIn"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/Instagram.png" alt="Instagram"></a>
+            <a href="https://pinterest.com" target="_blank"><img src="images/Pinterest.png" alt="Pinterest"></a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+  <footer>
+    &copy; <span id="year"></span>&nbsp; |&nbsp; <a href="attributions.html" target="_blank">Attributions</a> &nbsp;|
+    &nbsp;<span id="updated">Last Updated: <span id="lastupdated"></span></span>
+
+  </footer>
+
+  <script src="js/scripts.js"></script>
+  <script src="js/weather-info.js"></script>
+  <script src="js/slideshow.js"></script>
+  <script src="js/rentalsummary.js"></script>
+</body>
+
+</html>

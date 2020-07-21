@@ -1,0 +1,84 @@
+{
+    "rentals": [
+        {
+            "type": "Scooters",
+            "passengers": "1-2 people",
+            "range": "$20 - $55",
+            "length": "Half-day or Full-day",
+            "list": [
+
+                {
+                    "name": "Honda Metro Scooter",
+                    "seating": "1",
+                    "reservehalf": "$20",
+                    "reservefull": "$30",
+                    "walkinhalf": "$25",
+                    "walkinfull": "$35",
+                    "imageurl": "images/honda_metro.jpg"
+                },
+                {
+                    "name": "Honda Dio Scooter",
+                    "seating": "2",
+                    "reservehalf": "$30",
+                    "reservefull": "$40",
+                    "walkinhalf": "$35",
+                    "walkinfull": "$45",
+                    "imageurl": "images/honda_dio.jpg"
+                },
+                {
+                    "name": "Honda PCX150 Scooter",
+                    "seating": "2",
+                    "reservehalf": "$40",
+                    "reservefull": "$50",
+                    "walkinhalf": "$45",
+                    "walkinfull": "$55",
+                    "imageurl": "images/honda_pxc.jpg"
+                }
+            ]
+        },
+        {
+            "type": "ATV",
+            "passengers": "4 people",
+            "range": "$50 - $80",
+            "length": "Half-day or Full-day",
+            "list": [
+                {
+                "name": "Honda Pioneer ATV",
+                "seating": "4",
+                "reservehalf": "$50",
+                "reservefull": "$70",
+                "walkinhalf": "$60",
+                "walkinfull": "$80",
+                "imageurl": "images/atv.jpg"
+            }
+        ]
+        },
+        {
+            "type": "Jeeps",
+            "passengers": "4-5 people",
+            "range": "$60 - $125",
+            "length": "Half-day or Full-day",
+            "list": [
+                {
+                    "name": "Jeep Wrangler - 4 door with a/c",
+                    "seating": "5",
+                    "reservehalf": "$70",
+                    "reservefull": "$100",
+                    "walkinhalf": "$85",
+                    "walkinfull": "$125",
+                    "imageurl": "images/jeep-4-door.jpg"
+                },
+                {
+                    "name": "Jeep Wrangler - 2 door",
+                    "seating": "4",
+                    "reservehalf": "$60",
+                    "reservefull": "$85",
+                    "walkinhalf": "$70",
+                    "walkinfull": "$90",
+                    "imageurl": "images/jeep-2-door.jpg"
+                }
+            ]
+
+        }
+    ]
+}
