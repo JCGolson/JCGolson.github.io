@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Lato&display=swap");
 body {
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 /* ---------------------------------- Header Formatting -----------------------------*/
@@ -678,7 +679,7 @@ form label.top select {
   border-radius: 4px;
   padding: .75rem;
   color: #000;
-  width: 100%;
+  width: 90%;
   max-width: 20rem;
 }
 
@@ -765,6 +766,7 @@ footer {
   font-family: "Lato", sans-serif;
   text-align: center;
   padding: 10px;
+  margin-bottom: 0;
 }
 footer a {
   color: white;
