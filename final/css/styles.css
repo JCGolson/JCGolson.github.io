@@ -380,7 +380,8 @@ section.five-day-forecast {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c37407), to(#f5ba05));
   color: white;
   padding: 5px 0;
-  font-weight: bold;
+  font-family: "Bubblegum Sans", cursive;
+  font-size: 1.3rem;
   border-bottom: 1px solid #4d5f11;
 }
 #weatherforecast div p {

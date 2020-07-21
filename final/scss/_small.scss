@@ -380,9 +380,11 @@ section.five-day-forecast {
       @include gradient($secondaryColor, $fourthColor);
       color: white;
       padding: 5px 0;
-      font-weight: bold;
+      font-family: $headingFont;
+      font-size: 1.3rem;
       border-bottom: 1px solid $primaryColor;
     }
+    
 
     p {
       margin-top: 0;
