@@ -77,7 +77,7 @@ header .headings p {
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #c37407;
+  background-color: #f5ba05;
   background-color: #c37407;
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c37407, endColorstr=#f5ba05);
   background-image: -moz-linear-gradient(center top, #c37407, #f5ba05);
