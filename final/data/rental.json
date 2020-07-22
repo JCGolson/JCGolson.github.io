@@ -1,13 +1,10 @@
 {
-    "rentals": [
-        {
+    "rentals": [{
             "type": "Scooters",
             "passengers": "1-2 people",
             "range": "$20 - $55",
             "length": "Half-day or Full-day",
-            "list": [
-
-                {
+            "list": [{
                     "name": "Honda Metro Scooter",
                     "seating": "1",
                     "reservehalf": "$20",
@@ -34,15 +31,13 @@
                     "walkinfull": "$55",
                     "imageurl": "images/honda_pxc.jpg"
                 }
-            ]
-        },
+            ]},
         {
             "type": "ATV",
             "passengers": "4 people",
             "range": "$50 - $80",
             "length": "Half-day or Full-day",
-            "list": [
-                {
+            "list": [{
                 "name": "Honda Pioneer ATV",
                 "seating": "4",
                 "reservehalf": "$50",
@@ -50,16 +45,14 @@
                 "walkinhalf": "$60",
                 "walkinfull": "$80",
                 "imageurl": "images/atv.jpg"
-            }
-        ]
+            }]
         },
         {
             "type": "Jeeps",
             "passengers": "4-5 people",
             "range": "$60 - $125",
             "length": "Half-day or Full-day",
-            "list": [
-                {
+            "list": [{
                     "name": "Jeep Wrangler - 4 door with a/c",
                     "seating": "5",
                     "reservehalf": "$70",
@@ -76,9 +69,7 @@
                     "walkinhalf": "$70",
                     "walkinfull": "$90",
                     "imageurl": "images/jeep-2-door.jpg"
-                }
-            ]
+                }]
 
-        }
-    ]
+        }]
 }

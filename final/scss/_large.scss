@@ -1,79 +1,107 @@
 header {
-    img {width: 125px;}
-    .headings {margin-left: 20px;
-    h1 {font-size: 4.55rem;}
-    p {font-size: 2rem;}
+  img {
+    width: 125px;
+  }
+
+  .headings {
+    margin-left: 20px;
+
+    h1 {
+      font-size: 4.55rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
   }
 }
 
-.slideshow {
+.top-view {
+  .slideshow {
     width: 600px;
     height: 400px;
+  }
+  .container1 {
+    .stats {
+      width: 80%;
+      margin: 10px auto;
+      .summary {
+        font-size: 1.2rem;
+        ul.col1, ul.col2 {line-height: 2rem;}
+      }
+    }
+    .classname {margin-top: 75px;}
+  }
 }
-
 
 /* ---------------------------  daily forcast formatting --------------------------------------- */
 
-.container1 {flex-direction: column;
-    align-items: center;
-    
-    width: 40%;
-    .stats {margin-bottom: 75px;}
+.container1 {
+  flex-direction: column;
+  align-items: center;
 
-    .summary {
-        display: grid;
-        grid-template-columns: .8fr 1.2fr;
-        font-size: 1.2rem;
-      }
+  width: 40%;
+
+  .stats {
+    margin-bottom: 75px;
+  }
+
+  .summary {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    font-size: 1.2rem;
+  }
 }
-
 
 #weatherforecast {
-    grid-gap: 40px;
+  grid-gap: 40px;
 }
-
-
 
 /* -----------------------------Rental Info formatting --------------------------------------*/
 
 .cards {
-    grid-gap: 50px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    div h3 {font-size: 1.75rem;}
-    div p {font-size: 1.3rem; margin-left: 30px;}
+  grid-gap: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  div h3 {
+    font-size: 1.75rem;
+  }
+
+  div p {
+    font-size: 1.3rem;
+    margin-left: 30px;
+  }
 }
-
-
 
 /* -------------------------------Tours Page ------------------------------------*/
-  .tours1-img img {
-    width: 100%;
+.tours1-img img {
+  width: 100%;
 }
-  .tours2-img  img {
-      width: 100%;
-  }
-  
-  .tours1-p {
-    flex-grow: 3;
+
+.tours2-img img {
+  width: 100%;
 }
+
+.tours1-p {
+  flex-grow: 3;
+}
+
 .tours2-p {
   flex-grow: 3;
 }
-  
 
 /* ---------------------------------Contact Info --------------------------------------------*/
 
 .locations {
-    .loc {
-        width: 30%;
-        margin-right: 40px;
-    }
-    .social {
-
-      .socialMediaLinks {
-          flex-direction: row;}
-
+  .loc {
+    width: 30%;
+    margin-right: 40px;
   }
-      
+
+  .social {
+    .socialMediaLinks {
+      flex-direction: row;
+    }
+  }
 }
