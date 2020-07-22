@@ -19,9 +19,10 @@ header {
     justify-items: flex-start;
     align-items: flex-start;
     .slideshow {
-      width: 400px;
-      height: 267px;
-  }
+      width: 60%;
+      height: auto;
+  
+    }
   .container1 {flex-direction: column;
     width: 40%;
     .stats {margin-bottom: 30px;}
