@@ -519,15 +519,15 @@ strong {
 .locations .loc h3 {
   margin-bottom: 0;
   margin-top: 10px;
+  color: #4d5f11;
 }
 .locations .loc p {
   margin-top: 2px;
 }
-.locations .map {
+.locations .loc .map {
   display: block;
 }
-.locations .map iframe {
-  display: block;
+.locations .loc .map img {
   width: 100%;
   height: auto;
   border: 0;
@@ -538,16 +538,38 @@ strong {
 }
 .locations .social h3 {
   margin-top: 30px;
-  margin-bottom: -15px;
+  margin-bottom: 0;
+  color: #4d5f11;
 }
-.locations .social .links {
+.locations .social .socialMediaLinks {
   display: flex;
   flex-direction: row;
-  margin: 20px 0;
 }
-.locations .social .links img {
-  width: 80%;
-  margin: 5px;
+.locations .social .socialMediaLinks a {
+  font-size: 26px;
+  margin: 10px 10px 0 0;
+  color: #000000;
+  text-decoration: none;
+  background: #f7e6a4;
+  padding: 10px;
+  width: 26px;
+  text-align: center;
+  border-radius: 50%;
+}
+.locations .social .socialMediaLinks a:hover {
+  color: #673ab7;
+}
+.locations .social .socialMediaLinks a.fa-twitter {
+  color: #00aced;
+}
+.locations .social .socialMediaLinks a.fa-facebook-f {
+  color: #3b5998;
+}
+.locations .social .socialMediaLinks a.fa-pinterest {
+  color: #C92228;
+}
+.locations .social .socialMediaLinks a.fa-instagram {
+  color: #8a3ab9;
 }
 
 /* ------------------------------Rental Page formatting ------------------------------------------ */
@@ -656,7 +678,8 @@ form fieldset p {
 form legend {
   color: #c37407;
   font-family: "Bubblegum Sans", cursive;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: bold;
   margin: 0;
   padding: 0;
 }
@@ -733,25 +756,36 @@ textarea#comments {
 }
 
 .payments {
-  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-self: stretch;
+  max-width: 300px;
+  margin-top: 15px;
+}
+.payments img {
+  width: 95%;
 }
 
 /* ----------------------------------Tours Page ------------------------------------------*/
-.tours1, .tours2 {
+.tours1,
+.tours2 {
   display: flex;
   flex-direction: column;
   margin: 0;
 }
 
-.tours1-img, .tours2-img {
+.tours1-img,
+.tours2-img {
   display: block;
 }
-.tours1-img img, .tours2-img img {
+.tours1-img img,
+.tours2-img img {
   width: 100%;
   max-width: 300px;
 }
 
-.tours1-p, .tours2-p {
+.tours1-p,
+.tours2-p {
   margin: 0;
 }
 
@@ -879,12 +913,8 @@ footer a {
     margin-top: 10px;
     margin-bottom: 0;
   }
-  .locations .social .links {
-    flex-wrap: wrap;
-  }
-  .locations .social .links a {
-    margin-right: 0;
-    width: 50px;
+  .locations .social .socialMediaLinks {
+    flex-direction: column;
   }
 }
 /* end of media query */
@@ -958,17 +988,12 @@ footer a {
   }
 
   /* ---------------------------------Contact Info --------------------------------------------*/
-  .locations
-  div .loc {
+  .locations .loc {
     width: 30%;
     margin-right: 40px;
   }
-
-  .social {
-    width: 20%;
-  }
-  .social img {
-    width: 20%;
+  .locations .social .socialMediaLinks {
+    flex-direction: row;
   }
 }
 /* end of media query */

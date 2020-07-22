@@ -116,15 +116,9 @@ p.first {margin-top: 0;}
             margin-top: 10px;
             margin-bottom: 0;
         }
+        .socialMediaLinks {
+            flex-direction: column;}
 
-        .links {
-            flex-wrap: wrap;
-
-            a {
-                margin-right: 0;
-                width: 50px;
-            }
-        }
     }
 }
 

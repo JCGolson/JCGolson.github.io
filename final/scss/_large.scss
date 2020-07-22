@@ -64,16 +64,16 @@ header {
 
 /* ---------------------------------Contact Info --------------------------------------------*/
 
-.locations 
-    div .loc {
+.locations {
+    .loc {
         width: 30%;
         margin-right: 40px;
-
     }
     .social {
-        width: 20%;
-        img {
-          width: 20%;
-        }
+
+      .socialMediaLinks {
+          flex-direction: row;}
+
+  }
       
 }
