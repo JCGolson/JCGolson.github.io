@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    setInterval(slider, 2000);
+    setInterval(slider, 4000);
     var i = 1;
   
     function slider() {
